@@ -1,4 +1,6 @@
 # rainydays
 
 Jackets website
-This is my first assignment including html
+Add a link to the logo that links to homepage.
+
+<li><a href="index.html">Home</a></li>
