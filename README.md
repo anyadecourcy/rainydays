@@ -1,6 +1,1 @@
-# rainydays
-
-Jackets website
-Add a link to the logo that links to homepage.
-
-<li><a href="index.html">Home</a></li>
+Style the navigation bar and finish the rest of the homepage
