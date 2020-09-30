@@ -15,10 +15,17 @@ nav a {
   color: #0b3a40;
   text-decoration: none;
   padding: 34px;
+  width: 150px
+  height: 90px
 }
 nav a:hover {
   color: #f17a13;
 }
 nav ul {
   padding: 0px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
