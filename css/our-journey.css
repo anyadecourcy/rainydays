@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "montserrat";
+  src: url("https://use.typekit.net/gpe5mkr.css") format("woff2");
+  font-display: auto;
+  font-style: normal;
+}
+
+body {
+  font-family: "montserrat", "Open Sans", "serif";
+  color: #0d0d0d;
+}
+
+nav li {
+  display: inline-block;
+  font-family: montserrat, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+nav a {
+  color: #0b3a40;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 30px;
+}
+nav a:hover {
+  color: #f17a13;
+}
