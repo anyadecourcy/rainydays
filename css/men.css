@@ -25,3 +25,9 @@ nav a {
 nav a:hover {
   color: #f17a13;
 }
+header {
+  background-image: url(../images/men-home.jpg);
+  height: 1364px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
