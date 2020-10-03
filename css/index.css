@@ -1,37 +1,61 @@
+/*Typography*/
 @font-face {
   font-family: "montserrat";
   src: url("https://use.typekit.net/gpe5mkr.css") format("woff2");
   font-display: auto;
   font-style: normal;
 }
+/*Typography*/
 
+/*Body*/
 body {
   font-family: "montserrat", "Open Sans", "serif";
+  background-image: url(../images/home-page.jpg);
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-size: 3500px;
+  background-position: center;
+  margin-left: 90px;
+}
+/*Body*/
+
+/*Header*/
+.header {
+  background-color: transparent;
+  text-align: center;
+}
+
+/*Main navigation*/
+.nav2 {
+  margin-left: 1500px;
+  font-size: 15px;
 }
 
 nav li {
   display: inline-block;
+  list-style-type: none;
   font-family: montserrat, sans-serif;
   font-weight: 500;
   font-style: normal;
   line-height: 100%;
+  margin-top: 20px;
 }
 nav a {
   color: #0b3a40;
+  background-color: transparent;
   text-decoration: none;
   padding: 10px;
-  font-size: 30px;
+  padding-right: 40px;
+  font-size: 25px;
 }
 nav a:hover {
   color: #f17a13;
 }
-
-header {
-  background-image: url(../images/home-page.jpg);
-  height: 1364px;
-  width: 100%;
-  background-repeat: no-repeat;
+.nav2 {
+  margin-right: 20px;
 }
+/*Main navigation*/
+
 h1 {
   position: absolute;
   top: 70%;
@@ -40,4 +64,35 @@ h1 {
   text-align: center;
   line-height: 200%;
   color: white;
+}
+
+.shop-now {
+  background-color: #f17a13;
+  opacity: 80%;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  position: absolute;
+  top: 90%;
+  left: 47%;
+}
+
+.shop-now:hover {
+  background-color: white;
+  color: orange;
+  border: none;
+  opacity: 100%;
+}
+/*Header*/
+
+main {
+  margin-left: 40px;
+  margin-bottom: 80px;
 }

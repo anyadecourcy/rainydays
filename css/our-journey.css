@@ -31,3 +31,6 @@ header {
   width: 100%;
   background-repeat: no-repeat;
 }
+.current {
+  text-decoration: underline;
+}

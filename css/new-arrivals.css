@@ -25,3 +25,6 @@ nav a {
 nav a:hover {
   color: #f17a13;
 }
+.current {
+  text-decoration: underline;
+}
