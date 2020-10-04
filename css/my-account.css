@@ -1,33 +1,124 @@
+/*Typography*/
 @font-face {
   font-family: "montserrat";
   src: url("https://use.typekit.net/gpe5mkr.css") format("woff2");
   font-display: auto;
   font-style: normal;
 }
+/*Typography*/
 
+/*Body*/
 body {
   font-family: "montserrat", "Open Sans", "serif";
-  color: #0d0d0d;
+  margin: 0;
+  margin-top: -40px;
+}
+/*Body*/
+
+/*Header*/
+header {
+  background-image: url(../images/my-account.jpg);
+  height: 1500px;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 40px;
+}
+
+/*Main navigation*/
+nav {
+  margin-left: 250px;
+  margin-top: 10px;
 }
 
 nav li {
   display: inline-block;
+  list-style-type: none;
   font-family: montserrat, sans-serif;
   font-weight: 500;
   font-style: normal;
+  line-height: 100%;
+  margin-top: 50px;
 }
 nav a {
   color: #0b3a40;
+  position: relative;
+  background-color: transparent;
   text-decoration: none;
-  padding: 10px;
-  font-size: 30px;
+  padding-right: 40px;
+  font-size: 25px;
+  right: 100px;
 }
 nav a:hover {
   color: #f17a13;
 }
-header {
-  background-image: url(../images/account.jpg);
-  height: 1364px;
-  width: 100%;
-  background-repeat: no-repeat;
+
+ul {
+  margin-left: 400px;
+  margin-top: -120px;
 }
+/*real toppnav*/
+
+.topnav {
+  overflow: hidden;
+  margin-left: 0px;
+  background-color: #0b3a40;
+  height: 90px;
+  margin-top: -90px;
+}
+
+.topnav a {
+  display: inline-block;
+  color: aliceblue;
+  font-size: 15px;
+  position: relative;
+  text-decoration: none;
+  padding: 14px 16px;
+  list-style: none;
+}
+
+.topnav .nav2 {
+  float: right;
+}
+/*Main navigation*/
+
+h1 {
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 200%;
+  color: white;
+}
+
+.shop-now {
+  background-color: #f17a13;
+  opacity: 80%;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  position: absolute;
+  top: 90%;
+  left: 47%;
+}
+
+.shop-now:hover {
+  background-color: white;
+  color: orange;
+  border: none;
+  opacity: 100%;
+}
+/*Header*/
+
+/*Main*/
+main {
+}
+
+/*Main*/
