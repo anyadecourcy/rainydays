@@ -24,10 +24,16 @@ header {
   margin-top: 40px;
 }
 
+.logo {
+  max width: 200px;
+  height: 120px;
+}
+
 /*Main navigation*/
 nav {
   margin-left: 250px;
   margin-top: 10px;
+  
 }
 
 nav li {
@@ -38,6 +44,7 @@ nav li {
   font-style: normal;
   line-height: 100%;
   margin-top: 50px;
+  
 }
 nav a {
   color: #0b3a40;
@@ -58,6 +65,7 @@ ul {
 }
 /*real toppnav*/
 
+
 .topnav {
   overflow: hidden;
   margin-left: 0px;
@@ -66,19 +74,26 @@ ul {
   margin-top: -90px;
 }
 
-.topnav a {
+.topnav li a {
   display: inline-block;
   color: aliceblue;
   font-size: 15px;
   position: relative;
+  right: 250px;
   text-decoration: none;
-  padding: 14px 16px;
+  padding: 15px 30px;
+  padding-left: 20px;
   list-style: none;
 }
 
-.topnav .nav2 {
+.topnav li {
   float: right;
 }
+
+.topnav a:hover{
+  color: #f17a13;
+}
+
 
 .current {
   text-decoration: underline;

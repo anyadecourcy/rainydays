@@ -18,16 +18,24 @@ body {
 /*Header*/
 header {
   background-image: url(../images/home-page.jpg);
+  background-size: 100%;
   height: 1500px;
   background-repeat: no-repeat;
   position: relative;
   margin-top: 40px;
+  
+}
+
+.logo {
+  max width: 200px;
+  height: 120px;
 }
 
 /*Main navigation*/
 nav {
   margin-left: 250px;
   margin-top: 10px;
+  
 }
 
 nav li {
@@ -38,6 +46,7 @@ nav li {
   font-style: normal;
   line-height: 100%;
   margin-top: 50px;
+  
 }
 nav a {
   color: #0b3a40;
@@ -58,6 +67,7 @@ ul {
 }
 /*real toppnav*/
 
+
 .topnav {
   overflow: hidden;
   margin-left: 0px;
@@ -71,9 +81,10 @@ ul {
   color: aliceblue;
   font-size: 15px;
   position: relative;
-  right: 350px;
+  right: 250px;
   text-decoration: none;
   padding: 15px 30px;
+  padding-left: 20px;
   list-style: none;
 }
 
@@ -81,16 +92,21 @@ ul {
   float: right;
 }
 
+.topnav a:hover{
+  color: #f17a13;
+}
+
 /*Main navigation*/
 
-h1 {
+.startquote {
   position: absolute;
-  top: 70%;
+  top: 42%;
   width: 100%;
   letter-spacing: 2px;
   text-align: center;
-  line-height: 200%;
+  line-height: 150%;
   color: white;
+  font-weight: 500;
 }
 
 .shop-now {
@@ -107,7 +123,7 @@ h1 {
   cursor: pointer;
   transition-duration: 0.4s;
   position: absolute;
-  top: 90%;
+  top: 50%;
   left: 47%;
 }
 
@@ -120,6 +136,58 @@ h1 {
 /*Header*/
 
 /*Main*/
+main{
+  margin-top: -400px;
+  padding-left: 135px;
+  padding-right: 135px;
+  margin-bottom: 500px;
+}
+
+.pushing{
+  color:#0D0D0D;
+  font-size: 40px;
+}
+/*BALLS*/
+
+.balls{
+  justify-content: space-between;
+  
+}
+
+.dot {
+  height: 300px;
+  width: 300px;
+  background-color: #B5B5B5; 
+  opacity: 20%;
+  border-radius: 50%;
+  box-shadow: 30px 30px 30px gray;
+  display: inline-block;
+  margin-left: 100px;
+}
+
+.ballone{
+  margin-top: -280px;
+  margin-left: 130px;
+  margin-right: 1225px;
+  font-size: 15px;
+  opacity: 80%;
+ }
+
+ .ballonee{
+   display: inline-block;
+   font-size: 30px;
+   margin-left: 50px;
+    }
+
+
+
+
+ /*BALLS*/
+
+
+.best{
+  margin-top: 600px;
+}
 
 /*Main*/
 
