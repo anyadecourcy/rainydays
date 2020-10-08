@@ -1,20 +1,22 @@
-Style the navigation bar and finish the rest of the homepage
-.nav2 {
-margin-left: 1500px;
-font-size: 15px;
-}
+redo navbar. Make it more organizable
+fix button
 
-.nav2 {
-position: relative;
-float: right;
-margin-top: 0px;
-padding: 14px 16px;
-background: #0b3a40;
-background-color: transparent;
-color:lue;
+button a {
 text-decoration: none;
-}
-
-.nav2 a:hover {
 color: white;
+padding: 15px 32px;
+margin: 4px 2px;
+background-color: #f17a13;
+cursor: pointer;
+border: none;
+}
+.shop-now {
+opacity: 80%;
+text-align: center;
+font-size: 18px;
+transition-duration: 0.7s;
+position: absolute;
+top: 53%;
+left: 47%;
+border: none;
 }

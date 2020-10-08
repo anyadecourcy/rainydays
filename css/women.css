@@ -65,7 +65,6 @@ ul {
 }
 /*real toppnav*/
 
-
 .topnav {
   overflow: hidden;
   margin-left: 0px;
@@ -79,7 +78,7 @@ ul {
   color: aliceblue;
   font-size: 15px;
   position: relative;
-  right: 250px;
+  right: 320px;
   text-decoration: none;
   padding: 15px 30px;
   padding-left: 20px;
@@ -90,10 +89,9 @@ ul {
   float: right;
 }
 
-.topnav a:hover{
+.topnav a:hover {
   color: #f17a13;
 }
-
 
 .current {
   text-decoration: underline;
