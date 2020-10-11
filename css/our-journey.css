@@ -24,76 +24,97 @@ header {
   margin-top: 40px;
 }
 
-.logo {
-  max width: 200px;
-  height: 120px;
+/*hamburger*/
+nav,
+#hamburger-menu {
+  display: none;
 }
+.hamburger-label {
+  color: #ffffff;
+  position: absolute;
+  left: 97%;
+  font-size: 1.5em;
+  display: block;
+  top: 5px;
+  padding: 0;
+}
+#hamburger-menu {
+  margin: 0;
+}
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+/*hamburger*/
+
+.logo {
+  max-width: 150px;
+  margin-left: 150px;
+  margin-top: 20px;
+}
+
+/*Top nav*/
+
+.topnav {
+  overflow: hidden;
+  background-color: #0b3a40;
+}
+
+.topnav a {
+  font-size: 12px;
+  float: right;
+  color: #ffffff;
+}
+
+.topnav li a {
+  position: relative;
+  right: 10%;
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.bottomnav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottomnav li a {
+  font-size: 20px;
+}
+/*Top nav*/
 
 /*Main navigation*/
-nav {
-  margin-left: 250px;
-  margin-top: 10px;
-  
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-nav li {
-  display: inline-block;
-  list-style-type: none;
-  font-family: montserrat, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 100%;
-  margin-top: 50px;
-  
+li {
+  display: inline;
 }
-nav a {
+
+li a {
   color: #0b3a40;
-  position: relative;
-  background-color: transparent;
   text-decoration: none;
-  padding-right: 40px;
-  font-size: 25px;
-  right: 100px;
+}
+
+.bottomnav {
+  position: relative;
+  width: 1200px;
+  top: -60px;
+  padding: 20px;
+  left: 300px;
+  padding: 10px;
+}
+
+.bottomnav li a {
+  font-size: 20px;
 }
 nav a:hover {
   color: #f17a13;
 }
-
-ul {
-  margin-left: 400px;
-  margin-top: -120px;
-}
-/*real toppnav*/
-
-.topnav {
-  overflow: hidden;
-  margin-left: 0px;
-  background-color: #0b3a40;
-  height: 90px;
-  margin-top: -90px;
-}
-
-.topnav li a {
-  display: inline-block;
-  color: aliceblue;
-  font-size: 15px;
-  position: relative;
-  right: 320px;
-  text-decoration: none;
-  padding: 15px 30px;
-  padding-left: 20px;
-  list-style: none;
-}
-
-.topnav li {
-  float: right;
-}
-
-.topnav a:hover {
-  color: #f17a13;
-}
-
-.current {
-  text-decoration: underline;
-}
-
+/*Main navigation*/

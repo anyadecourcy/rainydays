@@ -23,21 +23,27 @@
         ><i class="fas fa-bars"></i
       ></label>
       <input type="checkbox" id="hamburger-menu" />
-      <nav class="topnav">
+
+      <nav>        
+        <ul class="topnav">
         <li>
-          <a href="#"> <i class="fas fa-search"></i></a>
+          <form class="search">
+            <input type="text" placeholder="Search..." name="search" >
+           </form>
+           <li>
+            <a href="#"> <i class="fas fa-search"></i></a>
+          </li>
         </li>
         <li>
           <a href="#"> <i class="fas fa-shopping-cart"></i></a>
         </li>
         <li><a href="my-account.html">My account</a></li>
-      </nav>
-      <nav>
+      </ul>
         <a href="index.html"
           ><img src="images/RainyDays_Logo.png" alt="Rainydays company logo"
           class="logo"</a
         >
-        <ul>
+        <ul class="bottomnav">
           <li><a href="new-arrivals.html">New arrivals</a></li>
           <li><a href="men.html">Men</a></li>
           <li><a href="women.html">Women</a></li>
@@ -55,27 +61,49 @@
 
     <main>
       <h2 class="pushing">PUSHING THE COMFORT ZONE</h2>
-
-      <div class="balls">
+      <div class="circles">
         <span class="dot"> </span>
-        <span class="dot"> </span>
-        <span class="dot"> </span>
+        <span class="dottwo"> </span>
+        <span class="dotthree"> </span>
       </div>
 
-      <div class="ballone">
-        <h3 class="ballonee">HEADER</h3>
+    <div class="info-circle">
+      <div class="info-one">
+        <h3>HEADER</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor.
+        </p>
+      </div>
+
+      <div class="info-two">
+        <h3>HEADER</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
-
-      <h2 class="best"><strong>BEST SELLERS</strong></h2>
+      
+      <div class="info-three">
+        <h3>HEADER</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod.
+        </p>
+      </div>
+    </div>
+  
+    
+    <div class="best-sellers">
+      <h2><strong>BEST SELLERS</strong></h2>
       <img src="#" />
       <img src="#" />
       <button>View product</button>
       <button>View product</button>
       <p>PURCHASE 2 BEST SELLERS AND GET 10% OFF</p>
+    </div>
+
+    <div class="top"> 
       <h2>
         <strong><a href="#"> NEW ARRIVALS </a></strong>
       </h2>
@@ -101,6 +129,7 @@
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
       </p>
+    </div>
     </main>
 
     <footer>
@@ -138,6 +167,8 @@
         <li><a href="#">Twitter</a></li>
         <li><a href="#">Instagram</a></li>
       </ul>
+    
     </footer>
+  
   </body>
 </html>

@@ -18,7 +18,13 @@
 
   <body>
     <header>
-      <nav class="topnav">
+      <label for="hamburger-menu" class="hamburger-label"
+        ><i class="fas fa-bars"></i
+      ></label>
+      <input type="checkbox" id="hamburger-menu" />
+
+      <nav>        
+        <ul class="topnav">
         <li>
           <a href="#"> <i class="fas fa-search"></i></a>
         </li>
@@ -26,17 +32,16 @@
           <a href="#"> <i class="fas fa-shopping-cart"></i></a>
         </li>
         <li><a href="my-account.html">My account</a></li>
-      </nav>
-      <nav>
+      </ul>
         <a href="index.html"
           ><img src="images/RainyDays_Logo.png" alt="Rainydays company logo"
           class="logo"</a
         >
-        <ul>
+        <ul class="bottomnav">
           <li><a href="new-arrivals.html">New arrivals</a></li>
           <li><a href="men.html">Men</a></li>
           <li><a href="women.html">Women</a></li>
-          <li><a class="current" href="our-journey.html">Our journey</a></li>
+          <li><a href="our-journey.html">Our journey</a></li>
         </ul>
       </nav>
     </header>

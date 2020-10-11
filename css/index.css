@@ -17,9 +17,9 @@ body {
 
 /*Header*/
 header {
-  margin-bottom: 500px;
   background-image: url(../images/home-page.jpg);
-  height: 1500px;
+  background-size: 100%;
+  height: 1000px;
   background-repeat: no-repeat;
   min-height: 100px;
 }
@@ -29,14 +29,14 @@ nav,
 #hamburger-menu {
   display: none;
 }
-
 .hamburger-label {
-  color: #0b3a40;
+  color: #ffffff;
   position: absolute;
   left: 97%;
   font-size: 1.5em;
   display: block;
-  top: 10px;
+  top: 20px;
+  padding: 0;
 }
 #hamburger-menu {
   margin: 0;
@@ -48,173 +48,234 @@ nav,
 /*hamburger*/
 
 .logo {
-  max-width: 200px;
+  max-width: 150px;
   margin-left: 150px;
   margin-top: 20px;
 }
 
-/*Top*/
+/*Top nav*/
+
 .topnav {
-  background-color: #0b3a40;
-  margin-top: -40px;
-  padding: 5px;
   overflow: hidden;
+  background-color: #0b3a40;
 }
-.topnav li a {
-  color: aliceblue;
-  font-size: 15px;
-  padding: 20px;
-  position: relative;
-  right: 320px;
-  text-decoration: none;
-}
-.topnav li {
+
+.topnav a {
+  font-size: 18px;
   float: right;
+  color: #ffffff;
 }
-.topnav a:hover {
-  color: #f17a13;
+
+.search {
+  position: relative;
+  float: right;
+  right: 20%;
+  top: 20px;
 }
-/*Top*/
+input {
+  height: 30px;
+}
+
+.topnav li a {
+  position: relative;
+  right: 21%;
+  padding-top: 35px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  top: -5px;
+}
+
+.bottomnav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottomnav li a {
+  font-size: 20px;
+}
+/*Top nav*/
 
 /*Main navigation*/
-
 ul {
-  margin-left: 450px;
-  margin-top: -120px;
-  display: flex;
-}
-nav li {
-  display: block;
   list-style-type: none;
-  font-family: montserrat, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 100%;
-  margin-top: 50px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
-nav a {
+
+li {
+  display: inline;
+}
+
+li a {
   color: #0b3a40;
-  position: relative;
-  background-color: transparent;
   text-decoration: none;
-  padding: 30px;
-  font-size: 25px;
+}
+
+.bottomnav {
+  position: relative;
+  width: 1200px;
+  top: -60px;
+  padding: 20px;
+  left: 300px;
+  padding: 10px;
+}
+
+.bottomnav li a {
+  font-size: 20px;
 }
 nav a:hover {
   color: #f17a13;
 }
 /*Main navigation*/
+
 /*Header*/
 
 .startquote {
   position: absolute;
-  top: 42%;
+  top: 68%;
   width: 100%;
   letter-spacing: 1px;
   text-align: center;
-  line-height: 150%;
+  line-height: 50px;
   color: white;
   font-weight: 500;
-}
-
-button {
-  padding: 0;
-  border: none;
-}
-
-button a {
-  color: white;
-  text-decoration: none;
+  font-size: 40px;
 }
 
 .shop-now {
   background-color: #f17a13;
+  opacity: 70%;
+  border: none;
   text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 15px;
   position: absolute;
-  transition-duration: 0.7s;
-  top: 53%;
   left: 47%;
-  padding: 15px 32px;
-  margin: 4px 2px;
+  top: 85%;
+  width: 150px;
+  height: 50px;
 }
 
+.shop-now a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.shop-now:hover {
+  opacity: 100%;
+}
 /*Header*/
 
 /*Main*/
 main {
-  margin-bottom: 40000px;
+  margin-top: 0px;
+  height: 4000px;
 }
 
 .pushing {
+  top: 1000px;
   color: #0d0d0d;
   font-size: 40px;
+  margin-left: 150px;
+  margin-right: 150px;
 }
+
 /*BALLS*/
 
-.balls {
-  justify-content: space-between;
+.circles {
+  display: inline-block;
+  position: absolute;
+  top: 1120px;
+  margin-bottom: 500px;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
 .dot {
-  height: 300px;
-  width: 300px;
-  background-color: #b5b5b5;
-  opacity: 20%;
+  position: absolute;
+  left: 10px;
+  height: 320px;
+  width: 320px;
+  background-color: rgba(2, 89, 81, 0.6);
   border-radius: 50%;
-  box-shadow: 30px 30px 30px gray;
+  box-shadow: 10px 20px 20px rgba(181, 181, 181, 0.5);
   display: inline-block;
-  margin-left: 100px;
 }
 
-.ballone {
-  margin-top: -280px;
-  margin-left: 130px;
-  margin-right: 1225px;
-  font-size: 15px;
+.dottwo {
+  position: absolute;
+  left: 658px;
+  height: 320px;
+  width: 320px;
+  background-color: rgba(2, 89, 81, 0.6);
+  border-radius: 50%;
+  box-shadow: 10px 20px 20px rgba(181, 181, 181, 0.5);
+  display: inline-block;
+}
+
+.dotthree {
+  position: absolute;
+  left: 1270px;
+  height: 320px;
+  width: 320px;
+  background-color: rgba(2, 89, 81, 0.6);
+  border-radius: 50%;
+  box-shadow: 10px 20px 20px rgba(181, 181, 181, 0.5);
+  display: inline-block;
+}
+
+.info-circle {
+  font-size: 18px;
+}
+
+.info-one {
+  position: absolute;
+  top: 1155px;
   opacity: 80%;
+  width: 200px;
+  left: 220px;
 }
 
-.ballonee {
-  display: inline-block;
-  font-size: 30px;
-  margin-left: 50px;
+.info-two {
+  position: absolute;
+  opacity: 80%;
+  top: 1155px;
+  width: 200px;
+  left: 870px;
+}
+
+.info-three {
+  position: absolute;
+  opacity: 80%;
+  top: 1155px;
+  width: 200px;
+  left: 1490px;
 }
 
 /*BALLS*/
 
-.best {
-  margin-top: 600px;
-}
-
-/*Main*/
-
-/*Footer*/
-footer {
-  overflow: hidden;
-  background-color: gray;
-  bottom: 0px;
-  width: 100%;
-  height: 200px;
-}
-
-footer a {
+.best-sellers {
+  position: absolute;
+  top: 1500px;
   display: inline-block;
-  color: #0b3a40;
-  text-decoration: none;
+  overflow: hidden;
+  background: gray;
+  width: 2000px;
+  height: 1000px;
 }
 
-footer li {
-  list-style: none;
-}
-footer p {
-  float: left;
+.top {
+  position: absolute;
+  top: 2500px;
 }
 
-footer a {
-  position: relative;
-  background-color: transparent;
-  text-decoration: none;
-  font-size: 15px;
+footer {
+  position: absolute;
+  top: 3000px;
 }
 
+/*Best sellers*/
 /*Footer*/

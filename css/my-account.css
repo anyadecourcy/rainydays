@@ -10,129 +10,187 @@
 /*Body*/
 body {
   font-family: "montserrat", "Open Sans", "serif";
+  overflow-x: hidden;
   margin: 0;
-  margin-top: -40px;
 }
 /*Body*/
 
 /*Header*/
 header {
   background-image: url(../images/my-account.jpg);
-  height: 1500px;
+  background-size: 100%;
+  height: 1000px;
   background-repeat: no-repeat;
-  position: relative;
-  margin-top: 40px;
+  min-height: 100px;
 }
+
+/*hamburger*/
+nav,
+#hamburger-menu {
+  display: none;
+}
+.hamburger-label {
+  color: #ffffff;
+  position: absolute;
+  left: 97%;
+  font-size: 1.5em;
+  display: block;
+  top: 5px;
+  padding: 0;
+}
+#hamburger-menu {
+  margin: 0;
+}
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+/*hamburger*/
+
 .logo {
-  max width: 200px;
-  height: 120px;
+  max-width: 150px;
+  margin-left: 150px;
+  margin-top: 20px;
 }
+
+/*Top nav*/
+
+.topnav {
+  overflow: hidden;
+  background-color: #0b3a40;
+}
+
+.topnav a {
+  font-size: 12px;
+  float: right;
+  color: #ffffff;
+}
+
+.topnav li a {
+  position: relative;
+  right: 10%;
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.bottomnav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottomnav li a {
+  font-size: 20px;
+}
+/*Top nav*/
 
 /*Main navigation*/
-nav {
-  margin-left: 250px;
-  margin-top: 10px;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-nav li {
-  display: inline-block;
-  list-style-type: none;
-  font-family: montserrat, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 100%;
-  margin-top: 50px;
+li {
+  display: inline;
 }
-nav a {
+
+li a {
   color: #0b3a40;
-  position: relative;
-  background-color: transparent;
   text-decoration: none;
-  padding-right: 40px;
-  font-size: 25px;
-  right: 100px;
+}
+
+.bottomnav {
+  position: relative;
+  width: 1200px;
+  top: -60px;
+  padding: 20px;
+  left: 300px;
+  padding: 10px;
+}
+
+.bottomnav li a {
+  font-size: 20px;
 }
 nav a:hover {
   color: #f17a13;
 }
 
-ul {
-  margin-left: 400px;
-  margin-top: -120px;
+/*Form*/
+form {
+  position: absolute;
+  background-color: #ffffff;
+  height: 400px;
+  width: 400px;
+  top: 275px;
+  left: 500px;
+  border-style: solid;
+  border-color: #0b3a40;
+  border-width: 3px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  display: block;
 }
-/*real toppnav*/
 
-.topnav {
-  overflow: hidden;
-  margin-left: 0px;
-  background-color: #0b3a40;
-  height: 90px;
-  margin-top: -90px;
-}
-
-.topnav li a {
-  display: inline-block;
-  color: aliceblue;
-  font-size: 15px;
+legend {
   position: relative;
-  right: 320px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  color: #0b3a40;
+}
+
+.form_input {
+  display: block;
+  width: 350px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+label {
+  padding: 20px;
+}
+
+#email {
+  position: relative;
+  top: 40px;
+}
+
+#psw {
+  position: relative;
+  top: 60px;
+}
+.forgot {
+  position: relative;
+  top: 100px;
   text-decoration: none;
-  padding: 15px 30px;
-  padding-left: 20px;
-  list-style: none;
+  color: #000000;
 }
-
-.topnav li {
-  float: right;
-}
-
-.topnav a:hover {
-  color: #f17a13;
-}
-/*Main navigation*/
-
-h1 {
-  position: absolute;
-  top: 70%;
-  width: 100%;
-  letter-spacing: 2px;
-  text-align: center;
-  line-height: 200%;
-  color: white;
-}
-
-.shop-now {
+.submit {
+  position: relative;
+  top: 80px;
+  left: 200px;
   background-color: #f17a13;
-  opacity: 80%;
+  opacity: 70%;
   border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  margin: 4px 2px;
   cursor: pointer;
-  transition-duration: 0.4s;
-  position: absolute;
-  top: 90%;
-  left: 47%;
+  font-size: 15px;
+  width: 150px;
+  height: 50px;
+  color: #ffffff;
 }
-
-.shop-now:hover {
-  background-color: white;
-  color: orange;
-  border: none;
+.submit:hover {
   opacity: 100%;
 }
-/*Header*/
-
-/*Main*/
-main{
-  margin-top: -400px;
-  padding-left: 135px;
-  padding-right: 135px;
-  margin-bottom: 500px;
+.create {
+  position: relative;
+  top: 180px;
+  left: 3px;
+  text-decoration: none;
+  color: #000000;
 }
 
-/*Main*/
+/*Form*/
