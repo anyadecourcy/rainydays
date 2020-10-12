@@ -11,7 +11,7 @@
 body {
   font-family: "montserrat", "Open Sans", "serif";
   margin: 0;
-  margin-top: -40px;
+  display: grid;
 }
 /*Body*/
 
@@ -21,7 +21,6 @@ header {
   height: 1500px;
   background-repeat: no-repeat;
   position: relative;
-  margin-top: 40px;
 }
 
 /*hamburger*/
@@ -56,33 +55,21 @@ nav,
 /*Top nav*/
 
 .topnav {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: right;
+  grid-column-gap: 30px;
+  padding: 15px;
   overflow: hidden;
   background-color: #0b3a40;
 }
 
 .topnav a {
   font-size: 12px;
-  float: right;
   color: #ffffff;
+  margin-right: 200px;
 }
 
-.topnav li a {
-  position: relative;
-  right: 10%;
-  padding-top: 15px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 10px;
-}
-
-.bottomnav {
-  display: flex;
-  justify-content: space-around;
-}
-
-.bottomnav li a {
-  font-size: 20px;
-}
 /*Top nav*/
 
 /*Main navigation*/
@@ -94,22 +81,20 @@ ul {
   overflow: hidden;
 }
 
-li {
-  display: inline;
-}
-
 li a {
   color: #0b3a40;
   text-decoration: none;
 }
 
 .bottomnav {
-  position: relative;
-  width: 1200px;
-  top: -60px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-column-gap: 100px;
   padding: 20px;
-  left: 300px;
-  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  top: -75px;
+  justify-content: center;
 }
 
 .bottomnav li a {

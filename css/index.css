@@ -12,6 +12,7 @@ body {
   font-family: "montserrat", "Open Sans", "serif";
   overflow-x: hidden;
   margin: 0;
+  display: grid;
 }
 /*Body*/
 
@@ -35,7 +36,7 @@ nav,
   left: 97%;
   font-size: 1.5em;
   display: block;
-  top: 20px;
+  top: 15px;
   padding: 0;
 }
 #hamburger-menu {
@@ -56,56 +57,39 @@ nav,
 /*Top nav*/
 
 .topnav {
-  overflow: hidden;
   background-color: #0b3a40;
+  height: 50px;
 }
-
-.topnav a {
-  font-size: 18px;
-  float: right;
+.topnav li a {
+  font-size: 15px;
   color: #ffffff;
 }
 
+.top_one {
+  display: grid;
+  grid-template-columns: 210px 80px 80px 100px;
+  grid-gap: 10px;
+  height: 50px;
+  justify-content: end;
+  align-content: center;
+  margin-right: 400px;
+}
+
 .search {
-  position: relative;
-  float: right;
-  right: 20%;
-  top: 20px;
 }
 input {
-  height: 30px;
 }
 
-.topnav li a {
-  position: relative;
-  right: 21%;
-  padding-top: 35px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 10px;
-  top: -5px;
-}
-
-.bottomnav {
-  display: flex;
-  justify-content: space-around;
-}
-
-.bottomnav li a {
-  font-size: 20px;
-}
 /*Top nav*/
 
 /*Main navigation*/
+nav {
+}
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-}
-
-li {
-  display: inline;
 }
 
 li a {
@@ -114,12 +98,12 @@ li a {
 }
 
 .bottomnav {
-  position: relative;
-  width: 1200px;
-  top: -60px;
-  padding: 20px;
-  left: 300px;
-  padding: 10px;
+  display: grid;
+  grid-template-columns: 1px 150px 150px 150px 150px;
+  text-align: center;
+  justify-content: center;
+  margin-top: -50px;
+  height: 500px;
 }
 
 .bottomnav li a {
@@ -133,28 +117,30 @@ nav a:hover {
 /*Header*/
 
 .startquote {
-  position: absolute;
-  top: 68%;
-  width: 100%;
-  letter-spacing: 1px;
+  display: grid;
+  grid-template-columns: 1000px;
   text-align: center;
+  justify-content: center;
+  letter-spacing: 1px;
   line-height: 50px;
   color: white;
   font-weight: 500;
   font-size: 40px;
 }
 
+.shop {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  align-content: space-around;
+}
+
 .shop-now {
   background-color: #f17a13;
   opacity: 70%;
   border: none;
-  text-align: center;
-  display: inline-block;
   cursor: pointer;
   font-size: 15px;
-  position: absolute;
-  left: 47%;
-  top: 85%;
   width: 150px;
   height: 50px;
 }
@@ -162,6 +148,7 @@ nav a:hover {
 .shop-now a {
   text-decoration: none;
   color: #ffffff;
+  padding: 20px;
 }
 
 .shop-now:hover {
@@ -170,102 +157,69 @@ nav a:hover {
 /*Header*/
 
 /*Main*/
-main {
-  margin-top: 0px;
-  height: 4000px;
-}
 
 .pushing {
-  top: 1000px;
-  color: #0d0d0d;
+  color: #000000;
+  opacity: 85%;
   font-size: 40px;
   margin-left: 150px;
   margin-right: 150px;
+  position: relative;
 }
 
 /*BALLS*/
 
 .circles {
-  display: inline-block;
-  position: absolute;
-  top: 1120px;
-  margin-bottom: 500px;
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  column-gap: 270px;
+  justify-content: center;
   margin-left: 150px;
-  margin-right: 150px;
+  margin-right: 290px;
+  margin-bottom: 100px;
 }
 
 .dot {
-  position: absolute;
-  left: 10px;
   height: 320px;
   width: 320px;
   background-color: rgba(2, 89, 81, 0.6);
   border-radius: 50%;
   box-shadow: 10px 20px 20px rgba(181, 181, 181, 0.5);
-  display: inline-block;
+}
+.info {
+  display: grid;
+  text-align: center;
+  margin-top: 50px;
+  color: #ffffff;
 }
 
-.dottwo {
-  position: absolute;
-  left: 658px;
-  height: 320px;
-  width: 320px;
-  background-color: rgba(2, 89, 81, 0.6);
-  border-radius: 50%;
-  box-shadow: 10px 20px 20px rgba(181, 181, 181, 0.5);
-  display: inline-block;
+.info h3 {
+  font-size: 30px;
 }
-
-.dotthree {
-  position: absolute;
-  left: 1270px;
-  height: 320px;
-  width: 320px;
-  background-color: rgba(2, 89, 81, 0.6);
-  border-radius: 50%;
-  box-shadow: 10px 20px 20px rgba(181, 181, 181, 0.5);
-  display: inline-block;
-}
-
-.info-circle {
-  font-size: 18px;
-}
-
-.info-one {
-  position: absolute;
-  top: 1155px;
-  opacity: 80%;
-  width: 200px;
-  left: 220px;
-}
-
-.info-two {
-  position: absolute;
-  opacity: 80%;
-  top: 1155px;
-  width: 200px;
-  left: 870px;
-}
-
-.info-three {
-  position: absolute;
-  opacity: 80%;
-  top: 1155px;
-  width: 200px;
-  left: 1490px;
-}
-
 /*BALLS*/
 
+/*Best sellers*/
 .best-sellers {
-  position: absolute;
-  top: 1500px;
-  display: inline-block;
-  overflow: hidden;
-  background: gray;
-  width: 2000px;
-  height: 1000px;
+  display: grid;
+  background-color: rgba(181, 181, 181, 0.5);
+  height: 800px;
+  text-align: center;
 }
+
+.best-sellers h2 {
+  color: #000000;
+  opacity: 85%;
+  display: grid;
+  grid-template-rows: 50px;
+  justify-content: center;
+  margin-left: 200px;
+  margin-right: 350px;
+  font-size: 40px;
+  margin-bottom: 0;
+  height: 50px;
+}
+
+/*Best sellers*/
 
 .top {
   position: absolute;
@@ -273,9 +227,6 @@ main {
 }
 
 footer {
-  position: absolute;
-  top: 3000px;
 }
 
-/*Best sellers*/
 /*Footer*/

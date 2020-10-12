@@ -23,3 +23,7 @@ padding: 19% 40px;
 <li>
           <a href="#"> <i class="fas fa-search"></i></a>
         </li>
+
+position: absolute;
+top: 68%;
+width: 100%;
