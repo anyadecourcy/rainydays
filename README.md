@@ -1,4 +1,4 @@
-@media (min-width: 200px) {
+@media (mi-width: 200px) {
 .logo {
 float: left;
 }
