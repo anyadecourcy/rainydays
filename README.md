@@ -1,7 +1,3 @@
-@media (mi-width: 200px) {
-.logo {
-float: left;
-}
 nav {
 display: inline-block;
 }
@@ -18,7 +14,14 @@ nav a {
 padding: 19% 40px;
 }
 
-}
+.top_one {
+display: grid;
+grid-template-columns: 210px 80px 80px 100px;
+grid-gap: 10px;
+height: 50px;
+justify-content: end;
+align-content: center;
+margin-right: 400px;
 
 <footer>
       <h3>Free shipping</h3>

@@ -12,7 +12,6 @@ body {
   font-family: "montserrat", "Open Sans", "serif";
   overflow-x: hidden;
   margin: 0;
-  display: grid;
 }
 /*Body*/
 
@@ -27,7 +26,6 @@ header {
 }
 
 /*hamburger*/
-
 #hamburger-menu {
   display: none;
 }
@@ -140,9 +138,9 @@ nav a:hover {
 
 .shop {
   display: flex;
-  position: absolute;
-  left: 850px;
-  top: 700px;
+  position: relative;
+  left: -15px;
+  top: 550px;
   text-align: center;
   justify-content: center;
   align-content: space-around;
