@@ -154,28 +154,31 @@ nav a:hover {
   align-items: flex-start;
 }
 .jackets {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: 400px 400px;
-  position: relative;
-  grid-column-gap: 10px;
-  grid-row-gap: 100px;
-  margin-bottom: 100px;
-  margin-right: 100px;
   margin-left: 100px;
-}
-.jackets div {
+  margin-right: 100px;
+  margin-top: 30px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  margin-right: 50px;
-  margin-left: 50px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: space-around;
+  padding: 50px;
+  cursor: pointer;
+}
+
+.jackets div {
+  padding-bottom: 50px;
+}
+
+.body-text {
+  text-align: center;
+}
+
+.pris {
+  text-align: center;
 }
 
 .jackets div:hover {
-  border: 1px solid #f17a13;
-  cursor: pointer;
+  border: 1px solid #a6a394;
 }
 
 .show {
