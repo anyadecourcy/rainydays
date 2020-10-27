@@ -1,84 +1,88 @@
-nav {
-display: inline-block;
-}
-.hamburger-label {
-display: none;
-}
-ul {
-padding: 0px;
-}
-li {
-display: inline-block;
-}
-nav a {
-padding: 19% 40px;
-}
+<section class="bestgrid">
+    <div class="best-sellers">
+      <h2><strong>BEST SELLERS</strong></h2>
+      <div class="bestgridone">
+      <img class="women_jacket" src="images/homepage_women.jpg" />
+      <img class="men_jacket" src="images/homepage_men.jpg" />
+      <button class="viewproductone"><a href="women.html">View product</a></button>
+      <button class="viewproducttwo"><a href="men.html">View product</a></button>
+      </div>
+  </section>
 
-.top_one {
+.bestgrid {
 display: grid;
-grid-template-columns: 210px 80px 80px 100px;
-grid-gap: 10px;
+grid-template-columns: repeat(2, 2fr);
+height: 620px;
+background-color: rgba(181, 181, 181, 0.2);
+margin-bottom: 50px;
+}
+.best-sellers {
+grid-column: 1/3;
+margin-left: 150px;
+margin-right: 150px;
+}
+
+.best-sellers h2 {
+display: flex;
+justify-content: center;
+margin-bottom: 0;
 height: 50px;
-justify-content: end;
-align-content: center;
-margin-right: 400px;
+}
 
-<footer>
-      <h3>Free shipping</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
-      <h3>100% Payment secure</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
-      <h3>30 days return</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
-         
-      <p><small>&copy;2020 Rainydays AS. All rights reserved.</small></p>
+.best-sellers button {
+background-color: #ffffff;
+opacity: 80%;
+border: none;
+cursor: pointer;
+font-size: 15px;
+width: 642px;
+height: 41px;
+}
 
-      <ul class="customer">
-        <h3>CUSTOMER</h3>
-        <li><a href="#">Shipping</a></li>
-        <li><a href="#">30 Day return</a></li>
-        <li><a href="#">Free gift packing</a></li>
-        <li><a href="#">Tricks and tips</a></li>
-      </ul>
+.viewproductone a {
+text-decoration: none;
+color: #000;
+padding-right: 271px;
+padding-left: 271px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
 
-      <ul>
-        <h3>COMPANY</h3>
-        <li><a href="#">Our story</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <a href="index.html"
-        ><img src="images/RainyDays_Logo.png" alt="Company logo" width="230"
-        height="120"
-      </a>
+.best-sellers button:hover {
+background-color: #f17a13;
+}
 
-      <h3><a href="#">FEEDBACK</a></h3>
-      <p>
-        We would like to hear from you with any feedback about our website or
-        products.
-      </p>
+.viewproducttwo {
+position: relative;
+right: -156px;
+top: 5px;
+}
 
-      <ul class="follow">
-        <h3>FOLLOW US</h3>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Instagram</a></li>
-      </ul>
+.viewproducttwo a {
+text-decoration: none;
+color: #000;
+padding-right: 271px;
+padding-left: 271px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
 
-    </footer>
+.viewproduct {
+background-color: #ffffff;
+opacity: 80%;
+border: none;
+font-size: 15px;
+width: 442px;
+height: 41px;
+}
+
+.bestjackets img {
+display: flex;
+flex-direction: column;
+position: relative;
+top: 90px;
+margin-left: 100px;
+margin-right: 100px;
+justify-content: center;
+justify-content: space-around;
+}

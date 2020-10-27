@@ -6,6 +6,9 @@
   font-style: normal;
 }
 /*Typography*/
+* {
+  box-sizing: border-box;
+}
 
 /*Body*/
 body {
@@ -19,6 +22,7 @@ body {
 header {
   background-image: url(../images/home-page.jpg);
   background-size: cover;
+  width: 100%;
   background-repeat: no-repeat;
   height: 100%;
   background-position: center;
@@ -39,15 +43,6 @@ header {
   padding: 0;
 }
 
-@media only screen and (max-width: 1000px) {
-  .hamburger-label {
-    display: flex;
-  }
-  nav {
-    display: none;
-  }
-}
-
 #hamburger-menu {
   margin: 0;
 }
@@ -57,23 +52,43 @@ header {
 /*hamburger*/
 
 /*Top nav*/
-
 .topnav {
   background-color: #0b3a40;
   display: flex;
-  height: 40px;
+  justify-content: flex-end;
   align-items: center;
+  height: 40px;
 }
 
 .topnav li a {
-  position: relative;
-  left: 1500px;
   padding-left: 30px;
   padding-right: 30px;
   font-size: 15px;
   color: #ffffff;
 }
+.account {
+  margin-right: 100px;
+}
 
+.search {
+  width: 300px;
+  height: 25px;
+  border: none;
+}
+
+.sb {
+  margin-right: 80px;
+}
+.sb button {
+  background-color: #ffffff;
+  color: #0b3a40;
+  border: none;
+  height: 25px;
+  position: absolute;
+}
+::placeholder {
+  color: #0b3a40;
+}
 /*Top nav*/
 
 /*Main navigation*/
@@ -84,17 +99,10 @@ header {
 }
 
 .logo {
-  display: flex;
+  position: absolute;
+  top: 30px;
+  left: 50px;
   max-width: 150px;
-  position: relative;
-  top: 10px;
-  right: 400px;
-}
-
-.bottomnav img a {
-  position: relative;
-  left: 500px;
-  top: 10px;
 }
 
 .bottomnav li a {
@@ -102,7 +110,6 @@ header {
   padding: 40px;
   position: relative;
   top: 50px;
-  right: 140px;
 }
 
 ul {
@@ -125,9 +132,9 @@ nav a:hover {
 
 .startquote {
   display: flex;
-  position: absolute;
+  justify-content: center;
+  position: relative;
   top: 500px;
-  left: 620px;
   text-align: center;
   letter-spacing: 1px;
   line-height: 50px;
@@ -139,7 +146,6 @@ nav a:hover {
 .shop {
   display: flex;
   position: relative;
-  left: -15px;
   top: 550px;
   text-align: center;
   justify-content: center;
@@ -169,31 +175,19 @@ nav a:hover {
 /*Header*/
 
 /*Main*/
-.comfort {
-  display: grid;
-}
 
 .pushing {
   color: #000000;
   opacity: 85%;
   font-size: 40px;
-  margin-left: 150px;
-  margin-right: 150px;
-  position: relative;
+  margin-left: 100px;
 }
 
 /*BALLS*/
-
-.circles {
+.comfort {
   display: flex;
-  justify-content: space-around;
-  margin-left: 150px;
-  margin-right: 290px;
-  margin-bottom: 80px;
-  position: relative;
-  left: 45px;
+  justify-content: space-evenly;
 }
-
 .dot {
   height: 320px;
   width: 320px;
@@ -201,136 +195,126 @@ nav a:hover {
   border-radius: 50%;
   box-shadow: 10px 20px 20px rgba(181, 181, 181, 0.5);
 }
-.info {
-  display: grid;
-  text-align: center;
-  margin-top: 50px;
+
+.dot h3 {
   color: #ffffff;
+  font-size: 30px;
+  position: relative;
+  left: 90px;
+  top: 30px;
 }
 
-.info h3 {
-  font-size: 30px;
+.dot p {
+  color: #ffffff;
+  position: relative;
+  left: 15px;
+  top: 25px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
+
 /*BALLS*/
 
 /*Best sellers*/
-.bestgrid {
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  height: 620px;
+.bestsellers {
   background-color: rgba(181, 181, 181, 0.2);
-  margin-bottom: 50px;
+  height: 650px;
+  margin-bottom: 60px;
 }
-.best-sellers {
-  grid-column: 1/3;
-  margin-left: 150px;
-  margin-right: 150px;
-}
-
-.best-sellers h2 {
-  display: flex;
+.bestsellers h2 {
   color: #000000;
   opacity: 85%;
-  justify-content: center;
   font-size: 40px;
-  margin-bottom: 0;
-  height: 50px;
+  position: relative;
+  top: 50px;
+  margin-left: 100px;
+}
+.bestjackets {
+  position: relative;
+}
+.bestjackets img {
+  position: relative;
+  top: 50px;
+  left: 280px;
+  padding: 20px;
 }
 
-.best-sellers button {
+.bestjackets button {
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.bwomen {
+  position: absolute;
+  bottom: -47px;
+  left: 620px;
+  width: 640px;
+  height: 41px;
+  border: none;
   background-color: #ffffff;
   opacity: 80%;
-  border: none;
   cursor: pointer;
   font-size: 15px;
-  width: 642px;
+}
+.bmen {
+  position: absolute;
+  right: -41px;
+  bottom: -47px;
+  width: 640px;
   height: 41px;
+  border: none;
+  background-color: #ffffff;
+  opacity: 80%;
+  cursor: pointer;
+  font-size: 15px;
 }
 
-.women_jacket {
-  position: relative;
-  left: 10%;
-  top: 50px;
-}
-.men_jacket {
-  position: relative;
-  left: 10%;
-  top: 50px;
-}
-.viewproductone {
-  position: relative;
-  top: 5px;
-  left: 158px;
-}
-
-.viewproductone a {
+.bestjackets a {
   text-decoration: none;
   color: #000;
-  padding-right: 271px;
-  padding-left: 271px;
+  padding-right: 268px;
+  padding-left: 268px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.best-sellers button:hover {
+.bestjackets button:hover {
   background-color: #f17a13;
 }
 
-.viewproducttwo {
-  position: relative;
-  right: -156px;
-  top: 5px;
+.bestjackets a:hover {
+  color: #ffffff;
 }
-
-.viewproducttwo a {
-  text-decoration: none;
-  color: #000;
-  padding-right: 271px;
-  padding-left: 271px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 /*Best sellers*/
-
+/*Garanti*/
 .arrivals {
   display: flex;
-  max-width: 100%;
-  height: auto;
-  position: relative;
-  left: 50px;
-  margin-bottom: 50px;
+  justify-content: center;
 }
 
 .garanti {
-  margin-left: 50px;
-  margin-right: 100px;
-  margin-bottom: 50px;
-  display: grid;
-  grid-template-columns: 250px 300px 250px;
-  grid-template-rows: auto;
-  grid-column-gap: 50px;
+  display: flex;
   justify-content: space-evenly;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  text-align: center;
   color: #000000;
   opacity: 85%;
   font-weight: 500;
   font-style: normal;
   letter-spacing: 1px;
 }
-
 .garanti h3 {
   border: 1px solid #000;
   text-align: center;
 }
-
 .garanti p {
-  text-align: center;
+  width: 300px;
 }
+/*Garanti*/
 
 /*Footer*/
 footer {
-  display: grid;
-  grid-template-columns: 150px 150px 250px 250px 150px;
+  display: flex;
   justify-content: space-evenly;
   padding-top: 20px;
   padding-bottom: 30px;
@@ -338,9 +322,11 @@ footer {
   border-bottom: 2px solid #f17a13;
   line-height: 30px;
 }
+footer p {
+  width: 200px;
+}
 
 footer h3 {
-  display: flex;
   text-decoration: underline;
 }
 .bottom_logo {
@@ -353,6 +339,7 @@ footer h3 {
   display: flex;
 }
 .rights p {
-  margin-left: 150px;
+  position: relative;
+  left: 175px;
   color: #ffffff;
 }

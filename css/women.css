@@ -38,14 +38,6 @@ header {
   top: 15px;
   padding: 0;
 }
-@media only screen and (max-width: 1000px) {
-  .hamburger-label {
-    display: flex;
-  }
-  nav {
-    display: none;
-  }
-}
 
 #hamburger-menu {
   margin: 0;
@@ -53,27 +45,46 @@ header {
 #hamburger-menu:checked ~ nav {
   display: block;
 }
-
 /*hamburger*/
 
 /*Top nav*/
-
 .topnav {
   background-color: #0b3a40;
   display: flex;
-  height: 40px;
+  justify-content: flex-end;
   align-items: center;
+  height: 40px;
 }
 
 .topnav li a {
-  position: relative;
-  left: 1500px;
   padding-left: 30px;
   padding-right: 30px;
   font-size: 15px;
   color: #ffffff;
 }
+.account {
+  margin-right: 100px;
+}
 
+.search {
+  width: 300px;
+  height: 25px;
+  border: none;
+}
+
+div {
+  margin-right: 80px;
+}
+div button {
+  background-color: #ffffff;
+  color: #0b3a40;
+  border: none;
+  height: 27px;
+  position: absolute;
+}
+::placeholder {
+  color: #0b3a40;
+}
 /*Top nav*/
 
 /*Main navigation*/
@@ -84,17 +95,10 @@ header {
 }
 
 .logo {
-  display: flex;
+  position: absolute;
+  top: 30px;
+  left: 50px;
   max-width: 150px;
-  position: relative;
-  top: 10px;
-  right: 400px;
-}
-
-.bottomnav img a {
-  position: relative;
-  left: 500px;
-  top: 10px;
 }
 
 .bottomnav li a {
@@ -102,7 +106,6 @@ header {
   padding: 40px;
   position: relative;
   top: 50px;
-  right: 140px;
 }
 
 ul {
@@ -119,10 +122,6 @@ li a {
 nav a:hover {
   color: #f17a13;
 }
-.current {
-  text-decoration: underline;
-}
-/*Main navigation*/
 
 .current {
   text-decoration: underline;
