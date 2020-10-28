@@ -397,12 +397,30 @@ footer h3 {
   }
   .pushing {
     font-size: 20px;
+    margin-left: 50px;
   }
   .comfort {
-    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 10px;
   }
   .dot {
-    position: relative;
-    left: 100px;
+    width: 150px;
+    height: 150px;
+  }
+  .dot h3 {
+    top: 20px;
+    font-size: 12px;
+    left: 40px;
+  }
+  .dot p {
+    top: 20px;
+    left: 25px;
+    font-size: 10px;
+    margin: 0;
+    margin-right: 20px;
+  }
+  .bestsellers h2 {
+    font-size: 20px;
+    margin-left: 40px;
   }
 }
