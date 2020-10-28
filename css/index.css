@@ -382,6 +382,7 @@ footer h3 {
   .sb button {
     position: absolute;
     top: 10px;
+    left: 90px;
     background-color: transparent;
     color: #ffffff;
   }
