@@ -354,6 +354,7 @@ footer h3 {
   .hamburger-label {
     display: block;
   }
+
   .bottomnav {
     display: none;
     flex-direction: column;
@@ -421,6 +422,49 @@ footer h3 {
   }
   .bestsellers h2 {
     font-size: 20px;
-    margin-left: 40px;
+    left: -50px;
+  }
+  .bestsellers {
+    height: 920px;
+  }
+  .bestjackets img {
+    flex-direction: column;
+    left: 20px;
+    width: 550px;
+    height: 400px;
+  }
+  .bestjackets button {
+    width: 510px;
+  }
+  .bestjackets a {
+    padding: 0;
+  }
+  .bwomen {
+    top: 410px;
+    left: 295px;
+  }
+  .bmen {
+    left: 295px;
+  }
+  .arrivals img {
+    width: 600px;
+  }
+  .garanti {
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+  .garanti p {
+    width: 150px;
+  }
+  footer {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  footer p {
+    width: 120px;
+  }
+  .bottom_logo {
+    display: none;
   }
 }
