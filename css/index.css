@@ -382,7 +382,7 @@ footer h3 {
   .sb button {
     position: absolute;
     top: 10px;
-    left: 90px;
+    left: 60px;
     background-color: transparent;
     color: #ffffff;
   }
@@ -394,5 +394,15 @@ footer h3 {
   .shop-now {
     width: 120px;
     font-size: 10px;
+  }
+  .pushing {
+    font-size: 20px;
+  }
+  .comfort {
+    flex-direction: column;
+  }
+  .dot {
+    position: relative;
+    left: 100px;
   }
 }
