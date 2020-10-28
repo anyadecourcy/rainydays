@@ -23,27 +23,28 @@ header {
   height: 1000px;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+  top: -30px;
 }
 
 /*hamburger*/
 #hamburger-menu {
   display: none;
+  margin: 0;
 }
 .hamburger-label {
   color: #ffffff;
   position: absolute;
-  left: 97%;
-  font-size: 1.5em;
-  display: none;
-  top: 15px;
+  left: 85%;
+  font-size: 1, 5em;
+  top: 42px;
   padding: 0;
+  cursor: pointer;
+  display: none;
 }
 
-#hamburger-menu {
-  margin: 0;
-}
-#hamburger-menu:checked ~ nav {
-  display: block;
+#hamburger-menu:checked ~ .bottomnav {
+  display: inline-block;
 }
 /*hamburger*/
 
@@ -54,6 +55,8 @@ header {
   justify-content: flex-end;
   align-items: center;
   height: 40px;
+  position: relative;
+  top: 30px;
 }
 
 .topnav li a {
@@ -72,10 +75,10 @@ header {
   border: none;
 }
 
-div {
+.sb {
   margin-right: 80px;
 }
-div button {
+.sb button {
   background-color: #ffffff;
   color: #0b3a40;
   border: none;
@@ -92,11 +95,13 @@ div button {
   display: flex;
   text-align: center;
   justify-content: center;
+  position: relative;
+  top: 20px;
 }
 
 .logo {
   position: absolute;
-  top: 30px;
+  top: 10px;
   left: 50px;
   max-width: 150px;
 }
@@ -130,18 +135,24 @@ nav a:hover {
 
 /*Header*/
 /*Main*/
-
 .mini-header {
   display: flex;
   justify-content: space-around;
   position: relative;
-  top: 480px;
+  top: 555px;
   background-color: rgba(0, 0, 0, 0.7);
-  height: 400px;
+  height: 380px;
+  cursor: pointer;
 }
+
+.mini-header img:hover {
+  border: 2px solid #f17a13;
+}
+
 .mini-header h2 {
   color: #ffffff;
 }
+
 .all-jackets {
   position: relative;
   display: flex;
@@ -153,8 +164,8 @@ nav a:hover {
   align-items: flex-start;
 }
 .jackets {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 40px;
+  margin-right: 40px;
   margin-top: 30px;
   display: flex;
   justify-content: space-evenly;
@@ -174,6 +185,8 @@ nav a:hover {
 
 .pris {
   text-align: center;
+  font-weight: 200px;
+  font-style: normal;
 }
 
 .jackets div:hover {
@@ -211,34 +224,29 @@ nav a:hover {
 }
 /*Main*/
 .garanti {
-  margin-left: 50px;
-  margin-right: 100px;
-  margin-bottom: 50px;
-  display: grid;
-  grid-template-columns: 250px 300px 250px;
-  grid-template-rows: auto;
-  grid-column-gap: 50px;
+  display: flex;
   justify-content: space-evenly;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  text-align: center;
   color: #000000;
   opacity: 85%;
   font-weight: 500;
   font-style: normal;
   letter-spacing: 1px;
 }
-
 .garanti h3 {
   border: 1px solid #000;
   text-align: center;
 }
-
 .garanti p {
-  text-align: center;
+  width: 300px;
 }
+/*Garanti*/
 
 /*Footer*/
 footer {
-  display: grid;
-  grid-template-columns: 150px 150px 250px 250px 150px;
+  display: flex;
   justify-content: space-evenly;
   padding-top: 20px;
   padding-bottom: 30px;
@@ -246,21 +254,155 @@ footer {
   border-bottom: 2px solid #f17a13;
   line-height: 30px;
 }
+footer p {
+  width: 200px;
+}
+
+.follow a {
+  padding-left: 10px;
+}
+.follow i {
+  color: #0b3a40;
+}
 
 footer h3 {
-  display: flex;
   text-decoration: underline;
 }
 .bottom_logo {
   display: flex;
   padding-top: 25px;
 }
+/*Footer*/
 
 .rights {
   background-color: #0b3a40;
   display: flex;
 }
 .rights p {
-  margin-left: 150px;
+  position: relative;
+  left: 175px;
   color: #ffffff;
+}
+
+/*MQ for small phones screens*/
+
+@media screen and (max-width: 600px) {
+  .hamburger-label {
+    display: block;
+  }
+  main {
+    overflow-x: hidden;
+  }
+  .bottomnav {
+    display: none;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 600px;
+    height: 200px;
+    top: 30px;
+  }
+  .bottomnav li a {
+    font-size: 18px;
+    line-height: 40px;
+    top: 20px;
+    padding: 5px;
+  }
+  .logo {
+    width: 110px;
+    top: 30px;
+    left: 30px;
+  }
+  .topnav li a {
+    font-size: 14px;
+  }
+  .search {
+    display: none;
+  }
+  .sb button {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    background-color: transparent;
+    color: #ffffff;
+  }
+
+  .startquote {
+    font-size: 30px;
+  }
+
+  .shop-now {
+    width: 120px;
+    font-size: 10px;
+  }
+  .pushing {
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  .comfort {
+    flex-wrap: wrap;
+    margin-left: 10px;
+  }
+  .dot {
+    width: 150px;
+    height: 150px;
+  }
+  .dot h3 {
+    top: 20px;
+    font-size: 12px;
+    left: 40px;
+  }
+  .dot p {
+    top: 20px;
+    left: 25px;
+    font-size: 10px;
+    margin: 0;
+    margin-right: 20px;
+  }
+  .bestsellers h2 {
+    font-size: 20px;
+    left: -50px;
+  }
+  .bestsellers {
+    height: 920px;
+  }
+  .bestjackets img {
+    flex-direction: column;
+    left: 20px;
+    width: 550px;
+    height: 400px;
+  }
+  .bestjackets button {
+    width: 510px;
+  }
+  .bestjackets a {
+    padding: 0;
+  }
+  .bwomen {
+    top: 410px;
+    left: 295px;
+  }
+  .bmen {
+    left: 295px;
+  }
+  .arrivals img {
+    width: 600px;
+  }
+  .garanti {
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+  .garanti p {
+    width: 150px;
+  }
+  footer {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  footer p {
+    width: 120px;
+  }
+  .bottom_logo {
+    display: none;
+  }
 }

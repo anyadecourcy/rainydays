@@ -329,6 +329,13 @@ footer p {
   width: 200px;
 }
 
+.follow a {
+  padding-left: 10px;
+}
+.follow i {
+  color: #0b3a40;
+}
+
 footer h3 {
   text-decoration: underline;
 }
@@ -354,7 +361,9 @@ footer h3 {
   .hamburger-label {
     display: block;
   }
-
+  main {
+    overflow-x: hidden;
+  }
   .bottomnav {
     display: none;
     flex-direction: column;
@@ -467,4 +476,6 @@ footer h3 {
   .bottom_logo {
     display: none;
   }
+}
+@media screen and (max-width: 400px) {
 }
