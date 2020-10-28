@@ -27,27 +27,28 @@ header {
   height: 100%;
   background-position: center;
   height: 1000px;
+  position: relative;
+  top: -30px;
 }
 
 /*hamburger*/
 #hamburger-menu {
   display: none;
+  margin: 0;
 }
 .hamburger-label {
   color: #ffffff;
   position: absolute;
-  left: 97%;
-  font-size: 1.5em;
-  display: none;
-  top: 15px;
+  left: 85%;
+  font-size: 1, 5em;
+  top: 42px;
   padding: 0;
+  cursor: pointer;
+  display: none;
 }
 
-#hamburger-menu {
-  margin: 0;
-}
-#hamburger-menu:checked ~ nav {
-  display: block;
+#hamburger-menu:checked ~ .bottomnav {
+  display: inline-block;
 }
 /*hamburger*/
 
@@ -58,6 +59,8 @@ header {
   justify-content: flex-end;
   align-items: center;
   height: 40px;
+  position: relative;
+  top: 30px;
 }
 
 .topnav li a {
@@ -96,11 +99,13 @@ header {
   display: flex;
   text-align: center;
   justify-content: center;
+  position: relative;
+  top: 20px;
 }
 
 .logo {
   position: absolute;
-  top: 30px;
+  top: 10px;
   left: 50px;
   max-width: 150px;
 }
@@ -129,7 +134,6 @@ nav a:hover {
 /*Main navigation*/
 
 /*Header*/
-
 .startquote {
   display: flex;
   justify-content: center;
@@ -175,7 +179,6 @@ nav a:hover {
 /*Header*/
 
 /*Main*/
-
 .pushing {
   color: #000000;
   opacity: 85%;
@@ -201,18 +204,17 @@ nav a:hover {
   font-size: 30px;
   position: relative;
   left: 90px;
-  top: 30px;
+  top: 50px;
 }
 
 .dot p {
   color: #ffffff;
   position: relative;
   left: 15px;
-  top: 25px;
+  top: 45px;
   margin-left: 40px;
   margin-right: 40px;
 }
-
 /*BALLS*/
 
 /*Best sellers*/
@@ -285,6 +287,7 @@ nav a:hover {
   color: #ffffff;
 }
 /*Best sellers*/
+
 /*Garanti*/
 .arrivals {
   display: flex;
@@ -333,6 +336,7 @@ footer h3 {
   display: flex;
   padding-top: 25px;
 }
+/*Footer*/
 
 .rights {
   background-color: #0b3a40;
@@ -342,4 +346,52 @@ footer h3 {
   position: relative;
   left: 175px;
   color: #ffffff;
+}
+
+/*MQ for small phones screens*/
+
+@media screen and (max-width: 600px) {
+  .hamburger-label {
+    display: block;
+  }
+  .bottomnav {
+    display: none;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 600px;
+    height: 200px;
+    top: 30px;
+  }
+  .bottomnav li a {
+    font-size: 18px;
+    line-height: 40px;
+    top: 20px;
+    padding: 5px;
+  }
+  .logo {
+    width: 110px;
+    top: 30px;
+    left: 30px;
+  }
+  .topnav li a {
+    font-size: 14px;
+  }
+  .search {
+    display: none;
+  }
+  .sb button {
+    position: absolute;
+    top: 10px;
+    background-color: transparent;
+    color: #ffffff;
+  }
+
+  .startquote {
+    font-size: 30px;
+  }
+
+  .shop-now {
+    width: 120px;
+    font-size: 10px;
+  }
 }
