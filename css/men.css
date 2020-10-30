@@ -182,6 +182,10 @@ nav a:hover {
   padding-bottom: 50px;
 }
 
+.jackets div a {
+  text-decoration: none;
+  color: #000;
+}
 .body-text {
   text-align: center;
 }

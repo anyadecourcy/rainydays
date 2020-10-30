@@ -27,27 +27,28 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   height: 1000px;
+  position: relative;
+  top: -30px;
 }
 
 /*hamburger*/
 #hamburger-menu {
   display: none;
+  margin: 0;
 }
 .hamburger-label {
   color: #ffffff;
   position: absolute;
-  left: 97%;
-  font-size: 1.5em;
-  display: none;
-  top: 15px;
+  left: 85%;
+  font-size: 1, 5em;
+  top: 42px;
   padding: 0;
+  cursor: pointer;
+  display: none;
 }
 
-#hamburger-menu {
-  margin: 0;
-}
-#hamburger-menu:checked ~ nav {
-  display: block;
+#hamburger-menu:checked ~ .bottomnav {
+  display: inline-block;
 }
 /*hamburger*/
 
@@ -58,6 +59,8 @@ header {
   justify-content: flex-end;
   align-items: center;
   height: 40px;
+  position: relative;
+  top: 30px;
 }
 
 .topnav li a {
@@ -76,10 +79,10 @@ header {
   border: none;
 }
 
-div {
+.sb {
   margin-right: 80px;
 }
-div button {
+.sb button {
   background-color: #ffffff;
   color: #0b3a40;
   border: none;
@@ -96,11 +99,13 @@ div button {
   display: flex;
   text-align: center;
   justify-content: center;
+  position: relative;
+  top: 20px;
 }
 
 .logo {
   position: absolute;
-  top: 30px;
+  top: 10px;
   left: 50px;
   max-width: 150px;
 }
@@ -145,6 +150,7 @@ nav a:hover {
   background-color: rgba(255, 255, 255, 0.9);
   opacity: 85%;
   position: relative;
+  top: 120px;
 }
 .the-journey h1 {
   position: relative;
@@ -168,114 +174,96 @@ nav a:hover {
 .contact {
   background-color: #f17a13;
   position: relative;
-  margin-top: 50px;
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-bottom: 100px;
-  height: 1000px;
-  display: flex;
-  flex-direction: column;
+  top: 30px;
+  left: 350px;
+  width: 1200px;
+  height: 800px;
 }
+
 .contact h2 {
   display: flex;
   justify-content: center;
   font-size: 40px;
   color: #ffffff;
+  position: relative;
+  top: 10px;
 }
 .our-info {
   background-color: #ffffff;
-  margin-left: 100px;
-  margin-right: 100px;
-  height: 300px;
-  display: grid;
-  grid-template-columns: 300px 300px;
-  grid-template-rows: 80px 100px 100px;
-  grid-template-areas:
-    "header header"
-    "left right"
-    "bottom email";
-  padding-left: 100px;
+  height: 200px;
+  width: 1000px;
   position: relative;
+  left: 100px;
 }
 .header-example {
-  grid-area: header;
-  justify-content: center;
   font-weight: 700;
   font-style: normal;
   font-size: 20px;
   position: relative;
+  left: 50px;
+  top: 10px;
 }
 .our-info address {
-  grid-area: left;
+  line-height: 25px;
 }
 
-.contact-email {
-  grid-area: email;
+.moreinfo {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  line-height: 30px;
 }
 
-.contact-us {
-  display: grid;
-  grid-template-areas:
-    "name subject"
-    "email number"
-    "message message"
-    "left center";
-  grid-template-columns: 350px 220px;
-  grid-template-rows: 50px 50px 200px 20px;
-  margin-top: 50px;
-  margin-left: 100px;
-  margin-right: 100px;
+.map {
+  font-size: 100px;
+  color: #0b3a40;
   position: relative;
+  left: 90px;
 }
 
-#name {
-  grid-area: name;
-  height: 30px;
-  border: none;
-  outline: none;
-  width: 200px;
-  padding-left: 20px;
-}
-
-#subject {
-  grid-area: subject;
-  height: 30px;
-  border: none;
-  outline: none;
-  width: 200px;
-  padding-left: 20px;
-}
-#email {
-  grid-area: email;
-  height: 30px;
-  border: none;
-  outline: none;
-  width: 200px;
-  padding-left: 20px;
-}
-#number {
-  grid-area: number;
-  height: 30px;
-  border: none;
-  outline: none;
-  width: 200px;
-  padding-left: 20px;
-}
-textarea {
-  grid-area: message;
-  border: none;
-  outline: none;
-  padding-left: 20px;
-}
-#destination {
+.insertinfo {
   position: relative;
-  left: 370px;
-  top: -300px;
+  top: 45px;
+  margin-left: 80px;
+  margin-right: 600px;
 }
-.submit {
-  grid-area: left;
+
+.insertinfo input {
+  width: 180px;
+  height: 30px;
+  outline: none;
+  border: none;
+  padding-left: 10px;
+}
+
+.insertinfo label {
+  padding-left: 20px;
+}
+
+.email,
+.number {
   position: relative;
   top: 20px;
+}
+
+#destination {
+  position: relative;
+  top: -270px;
+  float: right;
+  margin-right: 100px;
+}
+
+textarea {
+  position: relative;
+  top: 100px;
+  left: 100px;
+  outline: none;
+  border: none;
+}
+.submit {
+  position: relative;
+  right: 180px;
+  top: 160px;
   background-color: #ffffff;
   border: none;
   cursor: pointer;
@@ -285,13 +273,17 @@ textarea {
   color: #000000;
 }
 
+/*Contact*/
 .underline {
+  position: relative;
+  top: 50px;
   border-bottom: 2px solid #f17a13;
-  margin-right: 1300px;
+  margin-right: 1390px;
 }
 .get-to-know {
   position: relative;
-  left: 200px;
+  top: 25px;
+  left: 120px;
   color: #000000;
   opacity: 85%;
   font-size: 40px;
@@ -299,24 +291,34 @@ textarea {
 
 .founder {
   display: flex;
-  margin-left: 200px;
-  margin-right: 150px;
-  justify-content: space-between;
+  padding: 0px;
+  width: 100%;
+  justify-content: center;
+  justify-content: space-around;
+  position: relative;
+  top: -20px;
+}
+.names {
+  width: 400px;
 }
 
-.names {
-  margin-top: 20px;
-  flex-direction: column;
-  padding-right: 100px;
-  margin-bottom: 50px;
+.names i {
+  font-size: 40px;
+  display: flex;
+}
+
+.co {
+  font-style: italic;
+}
+.sur {
+  font-weight: bold;
 }
 
 /*Main*/
 
 /*Footer*/
 footer {
-  display: grid;
-  grid-template-columns: 150px 150px 250px 250px 150px;
+  display: flex;
   justify-content: space-evenly;
   padding-top: 20px;
   padding-bottom: 30px;
@@ -324,21 +326,34 @@ footer {
   border-bottom: 2px solid #f17a13;
   line-height: 30px;
 }
+footer p {
+  width: 200px;
+}
+
+.follow a {
+  padding-left: 10px;
+}
+.follow i {
+  color: #0b3a40;
+}
 
 footer h3 {
-  display: flex;
   text-decoration: underline;
 }
 .bottom_logo {
   display: flex;
   padding-top: 25px;
 }
+/*Footer*/
 
 .rights {
   background-color: #0b3a40;
   display: flex;
 }
 .rights p {
-  margin-left: 150px;
+  position: relative;
+  left: 175px;
   color: #ffffff;
 }
+
+/*MQ for small phones screens*/

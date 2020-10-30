@@ -18,19 +18,16 @@
 
   <body>
     <header>
-      <label for="hamburger-menu" class="hamburger-label"
-      ><i class="fas fa-bars"></i
-    ></label>
-    <input type="checkbox" id="hamburger-menu" />
-
-    <nav>        
-      <ul class="topnav">
-        <div><form class="searching"><input class="search" type="text" placeholder="What are you looking for?" name="search"><button><i class="fas fa-search"></i></button> </form></div>
-      <li>
-        <a href="#"> <i class="fas fa-shopping-cart"></i></a>
-      </li>
-      <li><a class="account" href="my-account.html">My account</a></li>
+      <nav>        
+        <ul class="topnav">
+          <div class="sb"><form><input class="search" type="text" placeholder="What are you looking for?" name="search"><button><i class="fas fa-search"></i></button> </form></div>
+        <li>
+          <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+        </li>
+        <li><a class="account" href="my-account.html">My account</a></li>
       </ul>
+      <label for="hamburger-menu" class="hamburger-label"
+      ><i class="fas fa-bars"></i></label><input type="checkbox" id="hamburger-menu" />
 
       
     <ul class="bottomnav">
@@ -68,37 +65,57 @@
 
         <div class="our-info">
           <p class="header-example">This is an example of a header</p>
+          <div class="moreinfo">
           <address> Mauris cursus <br> 60 metus, Donec <br> Integer 7500 </address>
-          <p>+97 4327617 <br> +97 2547163</p>
-          <p class="contact-email">rainydays@gmail.com</p>
+          <p class="contact-nb"><i class="fas fa-mobile"></i> +97 4327617 <br><i class="fas fa-mobile"></i> +97 2547163</p>
+          <p class="contact-email"><i class="fas fa-envelope"></i> rainydays@gmail.com</p>
+          <div class="map"><i class="fas fa-map-marker-alt"></i></div>
+        </div>
         </div>
 
         <form class="contact-us">
-          <label for="name">
+          <div class="insertinfo">
+          <label class="name" for="name">
             <input type="text" id="name" placeholder="Name" required>
           </label>
-          <label for="subject">
+          <label class="subject" for="subject">
             <input type="text" id="subject" placeholder="Subject" required>
           </label>
-          <label for="email">
+          <label class="email" for="email">
             <input type="email" name="email" placeholder="Email" id="email" class="form_input" required>
           </label>
-          <label for="number">
+          <label class="number" for="number">
             <input type="tel" id= number name="number" placeholder="Phone" required>
           </label>
-          <textarea rows="2" cols="20" maxlength="1000" placeholder="Message..." required></textarea>
-          <button class="submit" type="submit">SEND</button>
-          <img id="destination" src="images\destination.png">
+          </div>
+
+         <textarea rows="15" cols="52" maxlength="1000" placeholder="Message..." required></textarea>
+        <button class="submit" type="submit">SEND</button>
+        <img id="destination" src="images\destination.png">
         </form>
       </section>
 
-      <div class="underline">
+      <section class="underline">
       <h2 class="get-to-know">GET TO KNOW US</h2>
-    </div>
+    </section>
+
     <section class="founder">
-      <div class="names">
-      <p>Name Surname</p>
-      <p>CO-FOUNDER & CTO</p>
+
+     <div class="names">
+      <i class="fas fa-user"></i>
+      <p class="sur">Name Surname</p>
+      <p class="co">CO-FOUNDER & CTO</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam
+        tortor vel semper aliquam. Donec lobortis erat non mi sollicitudin
+        imperdiet.
+      </p>
+    </div>
+
+    <div class="names">
+      <i class="fas fa-user"></i>
+      <p class="sur">Name Surname</p>
+      <p class="co">CO-FOUNDER & CTO</p>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam
         tortor vel semper aliquam. Donec lobortis erat non mi sollicitudin
@@ -106,17 +123,9 @@
       </p>
     </div>
     <div class="names">
-      <p>Name Surname</p>
-      <p>CO-FOUNDER & CTO</p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam
-        tortor vel semper aliquam. Donec lobortis erat non mi sollicitudin
-        imperdiet.
-      </p>
-    </div>
-    <div class="names">
-      <p>Name Surname</p>
-      <p>CO-FOUNDER & CTO</p>
+      <i class="fas fa-user"></i>
+      <p class="sur">Name Surname</p>
+      <p class="co">CO-FOUNDER & CTO</p>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam
         tortor vel semper aliquam. Donec lobortis erat non mi sollicitudin
@@ -124,48 +133,49 @@
       </p>
     </div>
     </section>
-   
-    </main>
+       </main>
 
-    <footer>
-      <ul class="customer">
-        <h3>CUSTOMER</h3>
-        <li><a href="#">Shipping</a></li>
-        <li><a href="#">30 Day return</a></li>
-        <li><a href="#">Free gift packing</a></li>
-        <li><a href="#">Tricks and tips</a></li>
-      </ul>
-      <ul class="company">
-        <h3>COMPANY</h3>
-        <li><a href="#">Our story</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-
-      <div class="bottom_logo">
-       <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Company logo" width="230"
-        height="120">
-      </a>
-      </div>
-
-      <div class="feedback">
-        <h3>FEEDBACK</h3>
-        <p>
-          We would like to hear from you with any feedback about our website or
-          products.
-        </p>
-      </div>
-
-     <ul class="follow">
-        <h3>FOLLOW US</h3>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Instagram</a></li>
-      </ul>
-      </footer>
-<section class="rights">
-   <p><small>&copy;2020 Rainydays AS. All rights reserved.</small></p>
-  </section>
-     </body>
+       <footer>
+        <ul class="customer">
+          <h3>CUSTOMER</h3>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">30 Day return</a></li>
+          <li><a href="#">Free gift packing</a></li>
+          <li><a href="#">Tricks and tips</a></li>
+        </ul>
+        
+        <ul class="company">
+          <h3>COMPANY</h3>
+          <li><a href="our-journey.html">Our story</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="our-journey.html">Contact</a></li>
+        </ul>
+  
+        <div class="bottom_logo">
+         <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Company logo" width="230"
+          height="120">
+        </a>
+        </div>
+  
+        <div class="feedback">
+          <h3>FEEDBACK</h3>
+          <p>
+            We would like to hear from you with any feedback about our website or
+            products.
+          </p>
+        </div>
+  
+       <ul class="follow">
+          <h3>FOLLOW US</h3>
+          <li><i class="fab fa-facebook-f"></i><a href="#">Facebook</a></li>
+          <li><i class="fab fa-twitter"></i><a href="#">Twitter</a></li>
+          <li><i class="fab fa-instagram"></i><a href="#">Instagram</a></li>
+        </ul>
+        </footer>
+  
+  <section class="rights">
+     <p><small>&copy;2020 Rainydays AS. All rights reserved.</small></p>
+    </section>
+       </body>
 </html>

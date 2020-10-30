@@ -137,32 +137,24 @@ nav a:hover {
 /*Main navigation*/
 
 .collection {
-  display: grid;
-  grid-template-areas:
-    "header header header"
-    "main main main";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #ffffff;
-  text-align: center;
+  position: relative;
+  top: 100px;
 }
 
 .collection h1 {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: 120px;
-  grid-area: header;
   font-size: 40px;
   font-weight: 600;
   font-style: normal;
 }
 .collection p {
-  display: flex;
-  justify-content: center;
+  width: 900px;
+  line-height: 25px;
   position: relative;
-  top: 150px;
-  grid-area: main;
-  margin-right: 500px;
-  margin-left: 500px;
+  top: 10px;
 }
 .list {
   display: flex;
@@ -170,7 +162,7 @@ nav a:hover {
   justify-content: space-around;
   position: relative;
   background-color: rgba(0, 0, 0, 0.7);
-  top: 471px;
+  top: 448px;
 }
 
 /*Header*/
