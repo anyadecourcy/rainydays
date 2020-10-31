@@ -357,3 +357,166 @@ footer h3 {
 }
 
 /*MQ for small phones screens*/
+@media screen and (max-width: 600px) {
+  .hamburger-label {
+    display: block;
+  }
+  main {
+    overflow-x: hidden;
+  }
+  .bottomnav {
+    display: none;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 600px;
+    height: 200px;
+    top: 30px;
+  }
+  .bottomnav li a {
+    font-size: 18px;
+    line-height: 40px;
+    top: 20px;
+    padding: 5px;
+  }
+  .logo {
+    width: 110px;
+    top: 30px;
+    left: 30px;
+  }
+  .topnav li a {
+    font-size: 14px;
+  }
+  .search {
+    display: none;
+  }
+  .sb button {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    background-color: transparent;
+    color: #ffffff;
+  }
+
+  .the-journey {
+    width: 500px;
+    position: relative;
+    justify-content: center;
+    margin: auto;
+    height: 700px;
+  }
+  .the-journey h1 {
+    font-size: 30px;
+    top: -10px;
+  }
+
+  .the-journey p {
+    margin: auto;
+    width: 400px;
+    font-size: 15px;
+    top: -40px;
+  }
+
+  .contact {
+    flex-direction: column;
+    margin: auto;
+    width: 700px;
+    justify-content: center;
+    left: -90px;
+  }
+
+  .contact h2 {
+    font-size: 20px;
+  }
+  .our-info {
+    width: 450px;
+    flex-direction: row;
+  }
+  .our-info p {
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  .map {
+    display: none;
+  }
+  .insertinfo {
+    margin: auto;
+  }
+  .insertinfo input {
+    width: 300px;
+  }
+  #name {
+    position: relative;
+    left: 100px;
+  }
+  #subject {
+    position: relative;
+    left: 100px;
+  }
+  . .email,
+  .number {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .insertinfo label {
+    display: flex;
+    flex-direction: column;
+    left: 100px;
+    padding: 10px;
+  }
+
+  #destination {
+    display: none;
+  }
+
+  textarea {
+    width: 350px;
+    top: 100px;
+    height: 130px;
+  }
+  main {
+    height: 1200px;
+  }
+
+  .underline {
+    margin: auto;
+  }
+  .get-to-know {
+    font-size: 20px;
+    margin: auto;
+  }
+  .underline h2 {
+    top: -10px;
+    left: 50px;
+  }
+
+  .founder {
+    top: 90px;
+    left: 50px;
+  }
+
+  .names p {
+    font-size: 10px;
+    width: 100px;
+  }
+
+  .garanti {
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+  .garanti p {
+    width: 150px;
+  }
+  footer {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  footer p {
+    width: 120px;
+  }
+  .bottom_logo {
+    display: none;
+  }
+}

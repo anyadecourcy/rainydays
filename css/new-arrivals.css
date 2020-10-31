@@ -280,12 +280,12 @@ footer h3 {
   .bottomnav li a {
     font-size: 18px;
     line-height: 40px;
-    top: 20px;
+    top: 30px;
     padding: 5px;
   }
   .logo {
     width: 110px;
-    top: 30px;
+    top: 40px;
     left: 30px;
   }
   .topnav li a {
@@ -301,67 +301,17 @@ footer h3 {
     background-color: transparent;
     color: #ffffff;
   }
-
-  .startquote {
+  .collection h1 {
     font-size: 30px;
   }
-
-  .shop-now {
-    width: 120px;
-    font-size: 10px;
+  .collection p {
+    width: 400px;
+    line-height: 20px;
   }
-  .pushing {
-    font-size: 20px;
-    margin-left: 50px;
-  }
-  .comfort {
-    flex-wrap: wrap;
-    margin-left: 10px;
-  }
-  .dot {
-    width: 150px;
-    height: 150px;
-  }
-  .dot h3 {
-    top: 20px;
-    font-size: 12px;
-    left: 40px;
-  }
-  .dot p {
-    top: 20px;
-    left: 25px;
-    font-size: 10px;
-    margin: 0;
-    margin-right: 20px;
-  }
-  .bestsellers h2 {
-    font-size: 20px;
-    left: -50px;
-  }
-  .bestsellers {
-    height: 920px;
-  }
-  .bestjackets img {
+  .list {
     flex-direction: column;
-    left: 20px;
-    width: 550px;
-    height: 400px;
-  }
-  .bestjackets button {
-    width: 510px;
-  }
-  .bestjackets a {
-    padding: 0;
-  }
-  .bwomen {
-    top: 410px;
-    left: 295px;
-  }
-  .bmen {
-    left: 295px;
-  }
-  .arrivals img {
-    width: 600px;
+    align-items: center;
+    top: 420px;
   }
   .garanti {
     flex-wrap: wrap;
@@ -381,6 +331,4 @@ footer h3 {
   .bottom_logo {
     display: none;
   }
-}
-@media screen and (max-width: 400px) {
 }
