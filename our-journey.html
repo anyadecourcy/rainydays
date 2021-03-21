@@ -4,16 +4,28 @@
     <title>Rainydays/Our Journey</title>
     <meta
       name="description"
-      content="Quality jackets, for both men and women, for all kinds of weather.Pushing the comfort zone"
+      content="Rainydays: Our journey"
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
     <link href="css\our-journey.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.typekit.net/gpe5mkr.css" />
     <script
       src="https://kit.fontawesome.com/4ff5a8b2ae.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Hotjar Tracking Code for https://rainydays-pushing-the-comfort-zone.netlify.app/index.html -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:2292524,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
   </head>
 
   <body>
@@ -21,17 +33,28 @@
       <nav>        
         <ul class="topnav">
           <div class="sb"><form><input class="search" type="text" placeholder="What are you looking for?" name="search"><button><i class="fas fa-search"></i></button> </form></div>
-        <li>
-          <a href="#"> <i class="fas fa-shopping-cart"></i></a>
-        </li>
+          <li>
+            <button id="cartButton"><i class="fas fa-shopping-cart"></i></button>
+            </li>
+
+            <div id="cartSection" class="section">
+
+                <div class="cart-content">
+                  <span class="close">&times;</span>
+                  <p>Your cart is currently empty 😔</p>
+                  <p>Why not check out some of our products?</p>
+                  <a href="/men.html">Men</a>
+                  <a href="/women.html">Women</a>
+                </div>
+              </div>
         <li><a class="account" href="my-account.html">My account</a></li>
       </ul>
       <label for="hamburger-menu" class="hamburger-label"
       ><i class="fas fa-bars"></i></label><input type="checkbox" id="hamburger-menu" />
 
       
+      <a class="logo" href="index.html"><img class="logo" src="images/RainyDays_Logo.png" alt="Rainydays company logo"></a> 
     <ul class="bottomnav">
-     <a class="logo" href="index.html"><img class="logo" src="images/RainyDays_Logo.png" alt="Rainydays company logo"></a> 
         <li><a href="new-arrivals.html">New arrivals</a></li>
         <li><a href="men.html">Men</a></li>
         <li><a href="women.html">Women</a></li>
@@ -41,7 +64,7 @@
       
       <section class="the-journey">
       <h1>THE RAINYDAYS JOURNEY</h1>
-      <p>
+      <p class="main_text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam
         tortor vel semper aliquam. Donec lobortis erat non mi sollicitudin
         imperdiet. Pellentesque at justo vitae neque porttitor dictum. Sed nec
@@ -57,6 +80,13 @@
         tincidunt nisl. Nulla nec erat ut augue dignissim tincidunt at non
         felis. Cras sed tincidunt mi.
       </p>
+      <p class="mini_text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam
+        tortor vel semper aliquam. Donec lobortis erat non mi sollicitudin
+        imperdiet. Pellentesque at justo vitae neque porttitor dictum. Sed nec
+        pharetra massa. Pellentesque condimentum ut nibh at mollis. Vestibulum
+        in quam odio. Aenean eleifend erat quis neque feugiat, quis faucibus
+        elit ultricies. </p>
     </section>
     </header>
     <main>
@@ -75,29 +105,54 @@
 
         <form class="contact-us">
           <div class="insertinfo">
+            
+            <div>
+           
           <label class="name" for="name">
-            <input type="text" id="name" placeholder="Name" required>
+            <p>Name</p>
+            <input type="text" id="name" placeholder="Name">
           </label>
-          <label class="subject" for="subject">
-            <input type="text" id="subject" placeholder="Subject" required>
-          </label>
-          <label class="email" for="email">
-            <input type="email" name="email" placeholder="Email" id="email" class="form_input" required>
-          </label>
-          <label class="number" for="number">
-            <input type="tel" id= number name="number" placeholder="Phone" required>
-          </label>
+          <div class="form-error" id="nameError">Minimum of 4 chracters</div>
           </div>
 
-         <textarea rows="15" cols="52" maxlength="1000" placeholder="Message..." required></textarea>
+          <div>
+          <label class="subject" for="subject">
+            <p>Subject</p>
+            <input type="text" id="subject" placeholder="Subject" required>
+          </label>
+        </div>
+
+          <div>
+          <label class="email" for="email">
+            <p>Email</p>
+            <input name="email" placeholder="Email" id="email" class="form_input">
+          </label>
+          <div class="form-error" id="emailError">Please enter a valid email</div>
+        </div>
+
+          <div>
+          <label class="number" for="number">
+            <p>Phone number</p>
+            <input type="tel" id= number name="number" placeholder="Phone">
+          </label>
+          <div class="form-error" id="numberError">Please enter a valid phone number of 8 digits</div>
+          </div>
+
+          </div>
+
+         <textarea rows="15" cols="52" maxlength="1000" placeholder="Message..."></textarea>
+        
         <button class="submit" type="submit">SEND</button>
+
+      
+        
         <img id="destination" src="images\destination.png">
         </form>
       </section>
 
-      <section class="underline">
+      
       <h2 class="get-to-know">GET TO KNOW US</h2>
-    </section>
+
 
     <section class="founder">
 
@@ -177,5 +232,7 @@
   <section class="rights">
      <p><small>&copy;2020 Rainydays AS. All rights reserved.</small></p>
     </section>
-       </body>
+    <script src="/js/contact.js"></script>
+    <script src="/js/cart.js"></script>
+    </body>
 </html>

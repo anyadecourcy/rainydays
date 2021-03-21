@@ -4,7 +4,7 @@
     <title>Rainydays/Rainydays</title>
     <meta
       name="description"
-      content="Quality jackets, for both men and women, for all kinds of weather.Pushing the comfort zone"
+      content="Rainydays: Quality jackets, for both men and women, for all kinds of weather.Pushing the comfort zone"
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,6 +14,18 @@
       src="https://kit.fontawesome.com/4ff5a8b2ae.js"
       crossorigin="anonymous"
     ></script>
+    
+    <!-- Hotjar Tracking Code for https://rainydays-pushing-the-comfort-zone.netlify.app/index.html -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:2292524,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
   </head>
 
   <!--main navigation-->
@@ -22,17 +34,27 @@
        <nav>        
         <ul class="topnav">
           <div class="sb"><form><input class="search" type="text" placeholder="What are you looking for?" name="search"><button><i class="fas fa-search"></i></button> </form></div>
-        <li>
-          <button><i class="fas fa-shopping-cart"></i></button>
-        </li>
+          <li>
+            <button id="cartButton"><i class="fas fa-shopping-cart"></i></button>
+            </li>
+
+            <div id="cartSection" class="section">
+                <div class="cart-content">
+                  <span class="close">&times;</span>
+                  <p>Your cart is currently empty 😔</p>
+                  <p>Why not check out some of our products?</p>
+                  <a href="/men.html">Men</a>
+                  <a href="/women.html">Women</a>
+                </div>
+              </div>
+
         <li><a class="account" href="my-account.html">My account</a></li>
       </ul>
       <label for="hamburger-menu" class="hamburger-label"
       ><i class="fas fa-bars"></i></label><input type="checkbox" id="hamburger-menu" />
 
-        
+      <a class="logo" href="index.html"><img class="logo" src="images/RainyDays_Logo.png" alt="Rainydays company logo"></a> 
       <ul class="bottomnav">
-       <a class="logo" href="index.html"><img class="logo" src="images/RainyDays_Logo.png" alt="Rainydays company logo"></a> 
           <li><a href="new-arrivals.html">New arrivals</a></li>
           <li><a href="men.html">Men</a></li>
           <li><a href="women.html">Women</a></li>
@@ -52,6 +74,7 @@
     <!--main navigation-->
 
     <main>
+
       <h2 class="pushing">PUSHING THE COMFORT ZONE</h2>
 
       <section class="comfort">
@@ -74,11 +97,11 @@
    <section class="bestsellers">
      <h2><strong>BEST SELLERS</strong></h2>
      <div class="bestjackets">
-      <img src="images/homepage_women.jpg" />
+      <img src="images/homepage_women.jpg"/>
       <img src="images/homepage_men.jpg" />
-      <button class="bwomen"><a href="women.html">View product</a></button>
-      <button class="bmen"><a href="men.html">View product</a></button>
     </div>
+    <button class="bwomen"><a href="/product page/women-product_page.html">View product</a></button>
+    <button class="bmen"><a href="/product page/men-product_page.html">View product</a></button>
    </section>
 
     <section class="arrivals">
@@ -151,5 +174,6 @@
 <section class="rights">
    <p><small>&copy;2020 Rainydays AS. All rights reserved.</small></p>
   </section>
+  <script src="/js/cart.js"></script>
      </body>
 </html>

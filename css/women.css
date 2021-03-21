@@ -1,143 +1,15 @@
-/*Typography*/
-@font-face {
-  font-family: "montserrat";
-  src: url("https://use.typekit.net/gpe5mkr.css") format("woff2");
-  font-display: auto;
-  font-style: normal;
-}
-/*Typography*/
 
-/*Body*/
-body {
-  font-family: "montserrat", "Open Sans", "serif";
-  overflow-x: hidden;
-  margin: 0;
-}
-/*Body*/
-
-/*Header*/
 header {
   background-image: url(../images/women-home.jpg);
-  background-size: cover;
-  height: 100%;
-  height: 1000px;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  top: -30px;
 }
-
-/*hamburger*/
-#hamburger-menu {
-  display: none;
-  margin: 0;
-}
-.hamburger-label {
-  color: #ffffff;
-  position: absolute;
-  left: 85%;
-  font-size: 1, 5em;
-  top: 42px;
-  padding: 0;
-  cursor: pointer;
-  display: none;
-}
-
-#hamburger-menu:checked ~ .bottomnav {
-  display: inline-block;
-}
-/*hamburger*/
-
-/*Top nav*/
-.topnav {
-  background-color: #0b3a40;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 40px;
-  position: relative;
-  top: 30px;
-}
-
-.topnav li a {
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 15px;
-  color: #ffffff;
-}
-.account {
-  margin-right: 100px;
-}
-
-.search {
-  width: 300px;
-  height: 25px;
-  border: none;
-}
-
-.sb {
-  margin-right: 80px;
-}
-.sb button {
-  background-color: #ffffff;
-  color: #0b3a40;
-  border: none;
-  height: 27px;
-  position: absolute;
-}
-::placeholder {
-  color: #0b3a40;
-}
-/*Top nav*/
-
-/*Main navigation*/
-.bottomnav {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  position: relative;
-  top: 20px;
-}
-
-.logo {
-  position: absolute;
-  top: 10px;
-  left: 50px;
-  max-width: 150px;
-}
-
-.bottomnav li a {
-  font-size: 20px;
-  padding: 40px;
-  position: relative;
-  top: 50px;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-li a {
-  color: #0b3a40;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: #f17a13;
-}
-
 .current {
   text-decoration: underline;
 }
-/*Main navigation*/
-
-/*Header*/
 /*Main*/
 .mini-header {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   position: relative;
   top: 555px;
   background-color: rgba(0, 0, 0, 0.7);
@@ -150,6 +22,7 @@ nav a:hover {
 }
 
 .mini-header h2 {
+  margin-top: 100px;
   color: #ffffff;
 }
 
@@ -177,6 +50,10 @@ nav a:hover {
 
 .jackets div {
   padding-bottom: 50px;
+}
+.jackets div a {
+  text-decoration: none;
+  color: #000;
 }
 
 .body-text {
@@ -223,138 +100,76 @@ nav a:hover {
   opacity: 100%;
 }
 /*Main*/
-.garanti {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 50px;
-  margin-top: 50px;
+
+/*MQ for phones screens*/
+@media (max-width: 426px){
+/*Main navigation*/
+header{
+  background-size: 1100px 860px;
+}
+.mini-header{
+top: 510px;
+}
+.example2 {
+  display: none;
+}
+.example3{
+  display: none;
+}
+.all-jackets{
+  top: -90px;
+  left: -185px;
+  justify-content: center;
   text-align: center;
-  color: #000000;
-  opacity: 85%;
-  font-weight: 500;
-  font-style: normal;
-  letter-spacing: 1px;
-}
-.garanti h3 {
-  border: 1px solid #000;
-  text-align: center;
-}
-.garanti p {
-  width: 300px;
-}
-/*Garanti*/
-
-/*Footer*/
-footer {
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  border-top: 2px solid #f17a13;
-  border-bottom: 2px solid #f17a13;
-  line-height: 30px;
-}
-footer p {
-  width: 200px;
+  font-size: 30px;
+  width: 500px;
 }
 
-.follow a {
-  padding-left: 10px;
-}
-.follow i {
-  color: #0b3a40;
-}
-
-footer h3 {
-  text-decoration: underline;
-}
-.bottom_logo {
-  display: flex;
-  padding-top: 25px;
-}
-/*Footer*/
-
-.rights {
-  background-color: #0b3a40;
-  display: flex;
-}
-.rights p {
+.jackets{
   position: relative;
-  left: 175px;
-  color: #ffffff;
+  top: -100px;
 }
-
-/*MQ for small phones screens*/
-
-@media screen and (max-width: 600px) {
-  .hamburger-label {
-    display: block;
-  }
-  main {
-    overflow-x: hidden;
-  }
-  .bottomnav {
-    display: none;
-    flex-direction: column;
-    background-color: #ffffff;
-    width: 600px;
-    height: 200px;
-    top: 30px;
-  }
-  .bottomnav li a {
-    font-size: 18px;
-    line-height: 40px;
-    top: 20px;
-    padding: 5px;
-  }
-  .logo {
-    width: 110px;
-    top: 30px;
-    left: 30px;
-  }
-  .topnav li a {
-    font-size: 14px;
-  }
-  .search {
-    display: none;
-  }
-  .sb button {
-    position: absolute;
-    top: 10px;
-    left: 60px;
-    background-color: transparent;
-    color: #ffffff;
-  }
-  .mini-header {
-    flex-direction: column;
-    align-items: center;
-    top: 460px;
-    height: 500px;
-  }
-  .mini-header img {
-    width: 190px;
-    height: 90px;
-  }
-  .mini-header h2 {
-    justify-content: center;
-  }
-
-  .garanti {
-    flex-wrap: wrap;
-    font-size: 12px;
-  }
-  .garanti p {
-    width: 150px;
-  }
-  footer {
-    font-size: 10px;
-    line-height: 20px;
-  }
-
-  footer p {
-    width: 120px;
-  }
-  .bottom_logo {
-    display: none;
-  }
+.show{
+  position: relative;
+  top: -100px;
 }
+}
+/*MQ for phones screens*/
+
+/*MQ for tablet screens*/
+@media (max-width: 769px) and (min-width: 427px){
+  .mini-header{
+    top: 580px;
+    }
+    .example3{
+      display: none;
+    }
+    .all-jackets{
+      top: -10px;
+      left: -5px;
+      justify-content: center;
+      text-align: center;
+      font-size: 35px;
+      width: 500px;
+    }
+  
+    .jackets{
+      position: relative;
+      top: -20px;
+    }
+    .show{
+      position: relative;
+      top: -50px;
+    }
+}
+/*MQ for tablet screens*/
+
+/*MQ for small laptop screens*/
+@media (max-width: 1025px) and (min-width: 770px){
+}
+/*MQ for small laptop screens*/
+
+/*MQ for laptops screens*/
+@media (max-width: 1440px) and (min-width: 1024px){
+}
+/*MQ for laptops screens*/

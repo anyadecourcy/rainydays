@@ -11,20 +11,25 @@
 }
 
 /*Body*/
-body {
-  font-family: "montserrat", "Open Sans", "serif";
-  overflow-x: hidden;
-  margin: 0;
+
+* {
+  box-sizing: border-box;
 }
+
+html, body{
+  font-family: "montserrat", "Open Sans", "serif";
+  margin: auto;
+  max-width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+}
+
 /*Body*/
 
 /*Header*/
 header {
   background-image: url(../images/home-page.jpg);
-  background-size: cover;
-  width: 100%;
   background-repeat: no-repeat;
-  height: 100%;
   background-position: center;
   height: 1000px;
   position: relative;
@@ -39,12 +44,11 @@ header {
 .hamburger-label {
   color: #ffffff;
   position: absolute;
-  left: 85%;
+  left: 90%;
   font-size: 1, 5em;
   top: 42px;
   padding: 0;
   cursor: pointer;
-  display: none;
 }
 
 #hamburger-menu:checked ~ .bottomnav {
@@ -52,10 +56,50 @@ header {
 }
 /*hamburger*/
 
+
+/*Shopping cart*/
+.section {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.cart-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 80px;
+  border: none;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*Shopping cart*/
+
 /*Top nav*/
 .topnav {
   background-color: #0b3a40;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
   height: 40px;
@@ -101,6 +145,45 @@ li button {
   color: #0b3a40;
 }
 /*Top nav*/
+/*Shopping cart*/
+.section {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.cart-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 80px;
+  border: none;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*Shopping cart*/
+
+
 
 /*Main navigation*/
 .bottomnav {
@@ -113,14 +196,17 @@ li button {
 
 .logo {
   position: absolute;
-  top: 10px;
+  top: 40px;
   left: 50px;
   max-width: 150px;
 }
 
 .bottomnav li a {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   font-size: 20px;
-  padding: 40px;
   position: relative;
   top: 50px;
 }
@@ -188,6 +274,8 @@ nav a:hover {
 
 /*Main*/
 .pushing {
+  display: flex;
+  flex-wrap: wrap;
   color: #000000;
   opacity: 85%;
   font-size: 40px;
@@ -197,6 +285,7 @@ nav a:hover {
 /*BALLS*/
 .comfort {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .dot {
@@ -239,65 +328,53 @@ nav a:hover {
   top: 50px;
   margin-left: 100px;
 }
-.bestjackets {
-  position: relative;
-}
-.bestjackets img {
-  position: relative;
-  top: 50px;
-  left: 280px;
-  padding: 20px;
+
+.bestjackets{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  justify-content: space-around;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 75px;
+  margin-right: 55px;
+  
 }
 
-.bestjackets button {
+.bestsellers button{
+  cursor: pointer;
+  width: 240px;
+  height: 41px;
+  border: none;
+  background-color: #ffffff;
+  opacity: 80%;
+  font-size: 15px;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-.bwomen {
-  position: absolute;
-  bottom: -47px;
-  left: 620px;
-  width: 640px;
-  height: 41px;
-  border: none;
-  background-color: #ffffff;
-  opacity: 80%;
-  cursor: pointer;
-  font-size: 15px;
-}
-.bmen {
-  position: absolute;
-  right: -41px;
-  bottom: -47px;
-  width: 640px;
-  height: 41px;
-  border: none;
-  background-color: #ffffff;
-  opacity: 80%;
-  cursor: pointer;
-  font-size: 15px;
-}
-
-.bestjackets a {
+.bestsellers a{
   text-decoration: none;
   color: #000;
-  padding-right: 268px;
-  padding-left: 268px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
-
-.bestjackets button:hover {
+.bestsellers button:hover {
   background-color: #f17a13;
 }
 
-.bestjackets a:hover {
-  color: #ffffff;
+.bwomen{
+  position: relative;
+  top: -300px;
+  left: 400px;
+}
+.bmen{
+  position: relative;
+  top: -300px;
+  left: 850px;
 }
 /*Best sellers*/
 
 /*Garanti*/
 .arrivals {
+  margin-top: 100px;
   display: flex;
   justify-content: center;
 }
@@ -305,6 +382,7 @@ nav a:hover {
 .garanti {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   margin-bottom: 50px;
   margin-top: 50px;
   text-align: center;
@@ -315,6 +393,8 @@ nav a:hover {
   letter-spacing: 1px;
 }
 .garanti h3 {
+  margin-left: 20px;
+  margin-right: 20px;
   border: 1px solid #000;
   text-align: center;
 }
@@ -327,6 +407,7 @@ nav a:hover {
 footer {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   padding-top: 20px;
   padding-bottom: 30px;
   border-top: 2px solid #f17a13;
@@ -343,145 +424,283 @@ footer p {
 .follow i {
   color: #0b3a40;
 }
-
 footer h3 {
   text-decoration: underline;
 }
 .bottom_logo {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 25px;
 }
-/*Footer*/
 
+/*Footer*/
 .rights {
-  background-color: #0b3a40;
   display: flex;
+  justify-content: flex-end;
+  background-color: #0b3a40;
+  
 }
 .rights p {
-  position: relative;
-  left: 175px;
   color: #ffffff;
+  margin-right: 100px;
 }
 
-/*MQ for small phones screens*/
+/*MQ for phones screens*/
+@media (max-width: 426px){
+/*Top nav*/
+.topnav li a {
+  font-size: 12px;
+}
+li button {
+  font-size: 13px;
+}
+.search {
+  display: none;
+}
+.sb {
+ position: relative;
+ top: -11px;
+ background-color: #0b3a40;
+}
+.sb button {
+  background-color: #0b3a40;
+  color: #ffffff;
+}
+/*Top nav*/
 
-@media screen and (max-width: 600px) {
-  .hamburger-label {
-    display: block;
-  }
-  main {
-    overflow-x: hidden;
-  }
-  .bottomnav {
-    display: none;
-    flex-direction: column;
-    background-color: #ffffff;
-    width: 600px;
-    height: 200px;
-    top: 30px;
-  }
-  .bottomnav li a {
-    font-size: 18px;
-    line-height: 40px;
-    top: 20px;
-    padding: 5px;
-  }
-  .logo {
-    width: 110px;
-    top: 30px;
-    left: 30px;
-  }
+/*Main navigation*/
+.bottomnav {
+  background-color: #0b3a40;
+  height: 200px;
+  width: 200px;
+  left: 225px;
+  top: 20px;
+  justify-content: space-evenly;
+  line-height: 40px;
+  display: none;
+}
+.logo {
+  left: 20px;
+}
+.bottomnav li a {
+  font-size: 12px;
+  position: relative;
+  top: 20px;
+  color: #ffffff;
+}
+nav a:hover {
+  color: #f17a13;
+}
+/*Main navigation*/
+
+/*Header*/
+.startquote {
+  top: 350px;
+  font-size: 25px;
+}
+
+.shop {
+  top: 350px;
+}
+.shop-now {
+  font-size: 10px;
+  width: 120px;
+  height: 35px;
+}
+/*Header*/
+
+/*Main*/
+.pushing {
+  text-align: center;
+  font-size: 25px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/*BALLS*/
+.dot {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+/*BALLS*/
+
+/*Best sellers*/
+.bestsellers h2 {
+  font-size: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+}
+
+
+.bwomen{
+  position: relative;
+  left: 220px;
+  top: -750px;
+}
+.bmen{
+  position: relative;
+  top: -350px;
+  left: 220px;
+}
+/*Best sellers*/
+
+/*Garanti*/
+.arrivals {
+  margin-top: 400px;
+}
+.arrivals img{
+  width: 700px;
+}
+
+
+/*Footer*/
+.rights p{
+  margin-right: 150px;
+}
+}
+/*MQ for phones screens*/
+
+/*MQ for tablet screens*/
+@media (max-width: 769px) and (min-width: 427px) {
+  /*Top nav*/
   .topnav li a {
     font-size: 14px;
   }
-  .search {
-    display: none;
+  li button {
+    font-size: 14px;
   }
-  .sb button {
-    position: absolute;
-    top: 10px;
-    left: 60px;
-    background-color: transparent;
+  .search {
+    width: 200px;
+  }
+  /*Top nav*/
+  
+  /*Main navigation*/
+  .bottomnav {
+    background-color: #0b3a40;
+    height: 250px;
+    width: 300px;
+    left: 470px;
+    top: 30px;
+    display: none;
+    justify-content: space-evenly;
+    line-height: 55px;
+  }
+  .logo {
+    left: 20px;
+  }
+  .bottomnav li a {
+    font-size: 14px;
+    position: relative;
+    top: 20px;
     color: #ffffff;
   }
-
+  nav a:hover {
+    color: #f17a13;
+  }
+  /*Main navigation*/
+  
+  /*Header*/
   .startquote {
-    font-size: 30px;
+    top: 350px;
+    font-size: 35px;
   }
-
+  .shop {
+    top: 350px;
+  }
   .shop-now {
-    width: 120px;
-    font-size: 10px;
-  }
-  .pushing {
-    font-size: 20px;
-    margin-left: 50px;
-  }
-  .comfort {
-    flex-wrap: wrap;
-    margin-left: 10px;
-  }
-  .dot {
+    font-size: 14px;
     width: 150px;
-    height: 150px;
+    height: 45px;
   }
-  .dot h3 {
-    top: 20px;
-    font-size: 12px;
-    left: 40px;
+  /*Header*/
+  
+  /*Main*/
+  .pushing {
+    text-align: center;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
-  .dot p {
-    top: 20px;
-    left: 25px;
-    font-size: 10px;
-    margin: 0;
-    margin-right: 20px;
+  
+  /*BALLS*/
+  .dot {
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  /*BALLS*/
+  
+  /*Best sellers*/
+  .bestsellers{
+    height: 1050px;
   }
   .bestsellers h2 {
-    font-size: 20px;
-    left: -50px;
+    font-size: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
   }
-  .bestsellers {
-    height: 920px;
+  .bwomen{
+    position: relative;
+    left: 400px;
+    top: -750px;
   }
-  .bestjackets img {
-    flex-direction: column;
-    left: 20px;
-    width: 550px;
-    height: 400px;
+  .bmen{
+    position: relative;
+    top: -350px;
+    left: 170px;
   }
-  .bestjackets button {
-    width: 510px;
+  /*Best sellers*/
+  
+  /*Garanti*/
+  .arrivals {
+    margin-top: 80px;
   }
-  .bestjackets a {
-    padding: 0;
+  .arrivals img{
+    width: 1000px;
   }
-  .bwomen {
-    top: 410px;
-    left: 295px;
-  }
-  .bmen {
-    left: 295px;
-  }
-  .arrivals img {
-    width: 600px;
-  }
-  .garanti {
-    flex-wrap: wrap;
-    font-size: 12px;
-  }
-  .garanti p {
-    width: 150px;
-  }
-  footer {
-    font-size: 10px;
-    line-height: 20px;
-  }
+}
+/*MQ for tablet screens*/
 
-  footer p {
-    width: 120px;
+/*MQ for small laptop screens*/
+@media (max-width: 1024px) and (min-width: 770px){
+  .hamburger-label{
+    display: none;
   }
-  .bottom_logo {
+  .bottomnav li{
+    position: relative;
+    left: 50px;
+  }
+  .bestsellers{
+    height: 1070px;
+  }
+  .bwomen{
+    left: 520px;
+    top: -760px;
+  }
+  .bmen{
+    left: 300px;
+  }
+}
+/*MQ for laptops screens*/
+@media (max-width: 1440px) and (min-width: 1024px){
+  .hamburger-label{
+    display: none;
+  }
+  .bottomnav li{
+    position: relative;
+    left: 50px;
+  }
+  .bwomen{
+    left: 400px;
+  }
+  .bmen{
+    left: 820px;
+  }
+}
+@media (max-width: 2000px) and (min-width: 1441px){
+  .hamburger-label{
     display: none;
   }
 }
+

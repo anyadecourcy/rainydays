@@ -1,142 +1,12 @@
-/*Typography*/
-@font-face {
-  font-family: "montserrat";
-  src: url("https://use.typekit.net/gpe5mkr.css") format("woff2");
-  font-display: auto;
-  font-style: normal;
+header{
+  background-image: url(../images/account.jpg);
 }
-/*Typography*/
-* {
-  box-sizing: border-box;
-}
-
-/*Body*/
-body {
-  font-family: "montserrat", "Open Sans", "serif";
-  overflow-x: hidden;
-  margin: 0;
-}
-/*Body*/
-
-/*Header*/
-header {
-  background-image: url(../images/my-account.jpg);
-  background-size: cover;
-  width: 100%;
-  background-repeat: no-repeat;
-  height: 100%;
-  background-position: center;
-  position: relative;
-  height: 1000px;
-  top: -30px;
-}
-
-/*hamburger*/
-#hamburger-menu {
-  display: none;
-  margin: 0;
-}
-.hamburger-label {
-  color: #ffffff;
-  position: absolute;
-  left: 85%;
-  font-size: 1, 5em;
-  top: 42px;
-  padding: 0;
-  cursor: pointer;
-  display: none;
-}
-
-#hamburger-menu:checked ~ .bottomnav {
-  display: inline-block;
-}
-/*hamburger*/
-
-/*Top nav*/
-.topnav {
-  background-color: #0b3a40;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 40px;
-  position: relative;
-  top: 30px;
-}
-
-.topnav li a {
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 15px;
-  color: #ffffff;
-}
-.account {
-  margin-right: 100px;
-}
-
-.search {
-  width: 300px;
-  height: 25px;
-  border: none;
-}
-
-.sb {
-  margin-right: 80px;
-}
-.sb button {
-  background-color: #ffffff;
-  color: #0b3a40;
-  border: none;
-  height: 25px;
-  position: absolute;
-}
-::placeholder {
-  color: #0b3a40;
-}
-/*Top nav*/
-
-/*Main navigation*/
-.bottomnav {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  position: relative;
-  top: 20px;
-}
-
-.logo {
-  position: absolute;
-  top: 10px;
-  left: 50px;
-  max-width: 150px;
-}
-
-.bottomnav li a {
-  font-size: 20px;
-  padding: 40px;
-  position: relative;
-  top: 50px;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-li a {
-  color: #0b3a40;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: #f17a13;
-}
-/*Main navigation*/
 
 /*Form*/
 .login {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   position: relative;
   top: 275px;
   left: 500px;
@@ -166,6 +36,7 @@ legend {
 }
 label {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   padding-left: 40px;
 }
@@ -211,110 +82,106 @@ label {
 }
 /*Form*/
 
-/*Footer*/
-footer {
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  border-top: 2px solid #f17a13;
-  border-bottom: 2px solid #f17a13;
-  line-height: 30px;
+/*MQ for phones screens*/
+@media (max-width: 426px){
+  header{
+    background-size: 700px 860px;
+  }
+
+  /*Form*/
+.login {
+  top: 205px;
+  left: 70px;
+  height: 450px;
+  width: 300px;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
-footer p {
+legend {
+  font-size: 15px;
+}
+
+.form_input {
   width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.follow a {
-  padding-left: 10px;
+.forgot {
+  top: 180px;
 }
-.follow i {
-  color: #0b3a40;
-}
-
-footer h3 {
-  text-decoration: underline;
-}
-.bottom_logo {
-  display: flex;
-  padding-top: 25px;
-}
-/*Footer*/
-
-.rights {
-  background-color: #0b3a40;
-  display: flex;
-}
-.rights p {
-  position: relative;
-  left: 175px;
-  color: #ffffff;
+.submit {
+  top: 50px;
+  left: 80px;
+  font-size: 12px;
+  width: 120px;
+  height: 35px;
 }
 
-/*MQ for small phones screens*/
-
-@media screen and (max-width: 600px) {
-  .hamburger-label {
-    display: block;
-  }
-  main {
-    overflow-x: hidden;
-  }
-
-  .login {
-    width: 400px;
-    left: 50px;
-  }
-
-  .bottomnav {
-    display: none;
-    flex-direction: column;
-    background-color: #ffffff;
-    width: 600px;
-    height: 200px;
-    top: 30px;
-  }
-  .bottomnav li a {
-    font-size: 18px;
-    line-height: 40px;
-    top: 20px;
-    padding: 5px;
-  }
-  .logo {
-    width: 110px;
-    top: 30px;
-    left: 30px;
-  }
-  .topnav li a {
-    font-size: 14px;
-  }
-  .search {
-    display: none;
-  }
-  .sb button {
-    position: absolute;
-    top: 10px;
-    left: 60px;
-    background-color: transparent;
-    color: #ffffff;
-  }
-
-  .garanti {
-    flex-wrap: wrap;
-    font-size: 12px;
-  }
-  .garanti p {
-    width: 150px;
-  }
-  footer {
-    font-size: 10px;
-    line-height: 20px;
-  }
-
-  footer p {
-    width: 120px;
-  }
-  .bottom_logo {
-    display: none;
-  }
+.create {
+  top: 220px;
+  left: 35px;
+  text-decoration: none;
+  color: #000000;
 }
+/*Form*/
+}
+/*MQ for phones screens*/
+
+/*MQ for tablet screens*/
+@media (max-width: 769px) and (min-width: 427px){
+  header{
+    background-size: 900px 900px;
+  }
+
+  /*Form*/
+.login {
+  top: 205px;
+  left: 180px;
+}
+legend {
+  font-size: 18px;
+}
+.form_input {
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.forgot {
+  top: 180px;
+}
+.submit {
+  top: 50px;
+  left: 80px;
+  font-size: 12px;
+  width: 120px;
+  height: 35px;
+}
+
+.create {
+  top: 160px;
+  left: 225px; 
+}
+/*Form*/
+}
+/*MQ for tablet screens*/
+
+/*MQ for small laptop screens*/
+@media (max-width: 1024px) and (min-width: 770px){
+  header{
+    background-size: 1200px 1000px;
+  }
+
+  /*Form*/
+.login {
+  top: 205px;
+  left: 280px;
+}
+/*Form*/
+}
+/*MQ for small laptop screens*/
+
+/*MQ for laptops screens*/
+@media (max-width: 1440px) and (min-width: 1024px){
+}
+/*MQ for laptops screens*/

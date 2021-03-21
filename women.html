@@ -4,16 +4,28 @@
     <title>Rainydays/women</title>
     <meta
       name="description"
-      content="Quality jackets, for both men and women, for all kinds of weather.Pushing the comfort zone"
+      content="Rainydays: Women quality jackets"
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css"/>
     <link href="css\women.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.typekit.net/gpe5mkr.css" />
     <script
       src="https://kit.fontawesome.com/4ff5a8b2ae.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Hotjar Tracking Code for https://rainydays-pushing-the-comfort-zone.netlify.app/index.html -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:2292524,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
   </head>
 
   <body>
@@ -21,17 +33,28 @@
       <nav>        
         <ul class="topnav">
           <div class="sb"><form><input class="search" type="text" placeholder="What are you looking for?" name="search"><button><i class="fas fa-search"></i></button> </form></div>
-        <li>
-          <a href="#"> <i class="fas fa-shopping-cart"></i></a>
-        </li>
+          <li>
+            <button id="cartButton"><i class="fas fa-shopping-cart"></i></button>
+            </li>
+
+            <div id="cartSection" class="section">
+
+                <div class="cart-content">
+                  <span class="close">&times;</span>
+                  <p>Your cart is currently empty 😔</p>
+                  <p>Why not check out some of our products?</p>
+                  <a href="/men.html">Men</a>
+                  <a href="/women.html">Women</a>
+                </div>
+              </div>
         <li><a class="account" href="my-account.html">My account</a></li>
       </ul>
       <label for="hamburger-menu" class="hamburger-label"
       ><i class="fas fa-bars"></i></label><input type="checkbox" id="hamburger-menu" />
 
       
+      <a class="logo" href="index.html"><img class="logo" src="images/RainyDays_Logo.png" alt="Rainydays company logo"></a> 
     <ul class="bottomnav">
-     <a class="logo" href="index.html"><img class="logo" src="images/RainyDays_Logo.png" alt="Rainydays company logo"></a> 
         <li><a href="new-arrivals.html">New arrivals</a></li>
         <li><a href="men.html">Men</a></li>
         <li><a class="current" href="women.html">Women</a></li>
@@ -40,15 +63,15 @@
     </nav>
 
     <section class="mini-header">
-      <div>
+      <div class="example1">
       <h2>EXAMPLE OF A HEADER</h2>
       <img src="images\women-cat1 (1).png">
     </div>
-    <div>
+    <div class="example2">
       <h2>EXAMPLE OF A HEADER</h2>
       <img src="images\women-cat1 (2).png">
     </div>
-    <div>
+    <div class="example3">
       <h2>EXAMPLE OF A HEADER</h2>
       <img src="images\women-cat1 (3).png">
     </div>
@@ -59,8 +82,8 @@
     <main>
     <h1 class="all-jackets">ALL RAINYDAYS WOMENS JACKETS</h1>
     <section class="jackets">
-      <div> <img src="images\homepage_women.jpg" width="350" height="400"> 
-        <h4 class="body-text">An example of body text</h4><h5 class="pris">Kr 2900</h5><h5 class="pris">BEST SELLER</h5></div>
+      <div> <a href="/product page/women-product_page.html"><img src="images\homepage_women.jpg" width="350" height="400"> 
+        <h4 class="body-text">An example of body text</h4><h5 class="pris">Kr 2900</h5><h5 class="pris">BEST SELLER</h5></a> </div>
       <div> <img src="images\women-cat1 (3).png" width="350" height="400"> 
           <h4 class="body-text">An example of body text</h4><h5 class="pris">Kr 2900</h5></div>
       <div> <img src="images\jacket-3.jpg" width="350" height="400"> 
@@ -155,5 +178,6 @@
     <section class="rights">
        <p><small>&copy;2020 Rainydays AS. All rights reserved.</small></p>
       </section>
+      <script src="/js/cart.js"></script>
          </body>
 </html>
