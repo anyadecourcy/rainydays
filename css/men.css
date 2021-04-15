@@ -4,6 +4,8 @@ header{
 .current {
   text-decoration: underline;
 }
+
+
 /*Main*/
 .mini-header {
   display: flex;
@@ -31,43 +33,40 @@ header{
   color: #000000;
   opacity: 85%;
   font-size: 40px;
-  margin-left: 150px;
+  margin-left: 100px;
   margin-right: 150px;
   align-items: flex-start;
 }
-.jackets {
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-content: space-around;
-  padding: 50px;
-  cursor: pointer;
+
+
+
+
+.products{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: rgb(243, 243, 243);
+  padding: 10px;
 }
 
-.jackets div {
-  padding-bottom: 50px;
+.product{
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 30px;  
 }
 
-.jackets div a {
+.product img {
+  width: 100%;
+  height: 50%;
+}
+.product img:hover{
+  height: 52%;
+}
+
+ .product a{
   text-decoration: none;
-  color: #000;
-}
-.body-text {
-  text-align: center;
+  color: #0b3a40;
 }
 
-.pris {
-  text-align: center;
-  font-weight: 200px;
-  font-style: normal;
-}
-
-.jackets div:hover {
-  border: 1px solid #a6a394;
-}
 
 .show {
   display: flex;
