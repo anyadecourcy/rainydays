@@ -21,11 +21,19 @@ getProducts ();
 
 function createHTML(products){
     console.log(products);
-
+    
 
     products.forEach(function(product){
-       
+    const sku = product.sku;
+    console.log(sku);
+
+    
+
+
     productContainer.innerHTML += 
+    
+    
+    
     
     `<div class = "product">
             <a href="/product page/men-product_page.html?id=${product.id}">
