@@ -55,12 +55,10 @@ header{
 }
 
 .product img {
-  width: 100%;
-  height: 50%;
+  width: 80%;
+  height: 70%;
 }
-.product img:hover{
-  height: 52%;
-}
+
 
  .product a{
   text-decoration: none;

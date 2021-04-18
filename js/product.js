@@ -1,7 +1,6 @@
 const productContainer = document.querySelector(".products");
 const url = "https://anyadecourcy.no/wp-json/wc/store/products";
 
-//console.log(url);
 
 
 async function getProducts () {
@@ -38,4 +37,5 @@ function createHTML(products){
     </div>` ;
     })
 }
+
 

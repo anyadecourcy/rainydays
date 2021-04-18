@@ -32,7 +32,7 @@ h1{
 
 .startDes img {
     margin-right: 50px;
-    max-width: 45%;
+    max-width: 30%;
 }
 
 .descriptionProduct{
@@ -40,16 +40,6 @@ h1{
     line-height: 30px;
     height: 200px;
 }
-
-
-
-
-
-
-
-
-
-
 
 .show-more{
     margin-top: 10px;

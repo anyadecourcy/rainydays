@@ -36,10 +36,26 @@
        <nav>        
         <ul class="topnav">
           <div class="sb"><form><input class="search" type="text" placeholder="What are you looking for?" name="search"><button><i class="fas fa-search"></i></button> </form></div>
-        <li>
-          <button><i class="fas fa-shopping-cart"></i></button>
-        </li>
-        <li><a class="account" href="my-account.html">My account</a></li>
+         
+          <li>
+            <button id="cartButton"><i class="fas fa-shopping-cart"></i></button>
+            </li>
+
+            <div id="cartSection" class="section">
+
+                <div class="cart-content">
+                  <span class="close">&times;</span>
+                  <div class="cart">
+                    <div class="cart-list"></div>
+                    <div class="total">Total:</div>
+                    <a href="cart.html" class="checkout-button">Checkout</a>
+                  </div>
+                </div>
+              </div>
+
+            
+
+        <li><a class="account" href="../my-account.html">My account</a></li>
       </ul>
       <label for="hamburger-menu" class="hamburger-label"
       ><i class="fas fa-bars"></i></label><input type="checkbox" id="hamburger-menu" />
@@ -58,7 +74,9 @@
 
     <main> 
       <div class="breadcrumb-nav"><a href="/men.html">Back to products</a></div>
-      <div class="product-details"></div>        
+      <div class="product-details"></div>       
+      
+  
       
   </main>
       <footer>
@@ -103,7 +121,10 @@
   <section class="rights">
      <p><small>&copy;2020 Rainydays AS. All rights reserved.</small></p>
     </section>
+    
     <script src="/js/product-info.js"></script>
+    <script src = "/js/cart.js"></script>
+    
        </body>
   </html>
 

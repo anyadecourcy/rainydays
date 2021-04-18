@@ -34,10 +34,24 @@
        <nav>        
         <ul class="topnav">
           <div class="sb"><form><input class="search" type="text" placeholder="What are you looking for?" name="search"><button><i class="fas fa-search"></i></button> </form></div>
-        <li>
-          <button><i class="fas fa-shopping-cart"></i></button>
-        </li>
-        <li><a class="account" href="my-account.html">My account</a></li>
+          
+          <li>
+            <button id="cartButton"><i class="fas fa-shopping-cart"></i></button>
+            </li>
+
+            <div id="cartSection" class="section">
+
+                <div class="cart-content">
+                  <span class="close">&times;</span>
+                  <p>Your cart is currently empty 😔</p>
+                  <p>Why not check out some of our products?</p>
+                  <a href="/men.html">Men</a>
+                  <a href="/women.html">Women</a>
+                </div>
+              </div>
+
+
+        <li><a class="account" href="../my-account.html">My account</a></li>
       </ul>
       <label for="hamburger-menu" class="hamburger-label"
       ><i class="fas fa-bars"></i></label><input type="checkbox" id="hamburger-menu" />

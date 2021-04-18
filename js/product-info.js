@@ -3,6 +3,11 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
+const cart = document.querySelector(".cart");
+const cartList = document.querySelector(".cart-list");
+const totalContainer = document.querySelector(".total");
+
+
 console.log(id);
 
 
@@ -35,13 +40,12 @@ function createHtml(product) {
                 <img src = "${product.images[0].src}" alt="${product.name}">
                 <div class = "descriptionProduct">${product.description}
                     <h3 >${product.price_html}</h3>
-                    <button class = "show-more">${product.add_to_cart.text}</button>
+                    <button class="show-more" data-product="${product.id}">Add to cart</button>
                 </div>
             </div>
-
             <div class = "endingDes">
-               
-              
             </div>
     `;
 }
+
+
